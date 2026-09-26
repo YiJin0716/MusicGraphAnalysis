@@ -1,0 +1,4327 @@
+{
+  "artifacts": {
+    "audit.json": "dc4fbb80918143b939da97a1fca8f1dce90de732473f561091653ba62d26f53b",
+    "checks.json": "86578913ab7dd783a05bb2cf763659dbcad6d9ed0bf5609cd1b92f0aa9af5e3d",
+    "commands.json": "dd27485ce4b5ff85193d9e944c68ab38e33886e27fbb2d6349d8e2bed58e99ae",
+    "config.json": "54ea03ec8c515edc1719bd4942226e95c1d87b7f8eed2f93bc8a5868fab45f62",
+    "connectivity.csv": "6775e61592b645bf234fac467a036dbcf4828e6a7a0e229e28c8ac454bf593ef",
+    "connectivity_summary.json": "ab282dabbcbd6c0142f2619fd34f1590d587de14478b3a1bdf9fcc59d412bed9",
+    "deviations.md": "4d04121eac5138c1ce674042a2bc95df863d67ef7ce65902e46537bf9aa16cd6",
+    "distances.npy": "f26bb8e484a6b48e734986354435db022513c12886b8b7fa6d0d5c8f1a4c46a3",
+    "environment.json": "009e3ddb478a4e3aadcd5b1aa1d3bb3ef82b5d9646b69fc81ac4a5e299a72dec",
+    "features.npy": "e84132573e970e64c1ed13ef25cb54d7a2e071f7796721a81e56a88ab495d63e",
+    "features_raw.npy": "ab33df0a25bd5e06a8152ade226ad37f8bed3c33007e27bf671c99714cb40a42",
+    "feature_names.json": "bf200bc8012d0399e048e3708d1deca0dc29b994dbf33ecc24173023729a557b",
+    "HANDOFF_A.md": "ddd0ecd051657d7523307fc0dbd41f48cc956433ee644347418aa9faa345dc4e",
+    "interaction.json": "7017f37690a826856914f4f22dfefe5704e66a581e5fdbf170f2ccfeb58d4c41",
+    "neighbors.npy": "285bc8c5551ebc1b658395d83e6634dee1ea24ae9e4a3c5c74b446444e07d4d7",
+    "nodes.jsonl": "f6b53ddc629dbde3946dccdf4c5a940531dd5c3d91229259f9316b45674b60a1",
+    "pca_variance.csv": "1865d224ce2a9287a72c2bdea4f509fe645d654100fa8f215f11ddee5b45fa7b",
+    "preprocessing.json": "9d3bbc66f47d64c3b8ed31f643f02f50da7460ef2cc60827c2cf282d9e2958ae",
+    "preprocessing.npz": "7a0bcadc5ccaf38384aab6ee6514e0b521b767296d9b172c9f2022d1070cfd7d",
+    "run_identity.json": "14da68564c008135322bb483639a1747dbe9f6bd2da916cbf996619c0bc2f190",
+    "similarities.npy": "e0f201e6305612718658f0d0ff760669fb112cb85bbb6968c78775e93be6015b",
+    "stages.json": "19fad491f583ec2d7e3d95bb51b771d5efc4b88bffedf453baaf8b45e8091275",
+    "components/k002.npz": "52d5624a017d9b8ad10367cc3a5063fbc5392a87a02589cff436b6f7585b9c95",
+    "components/k003.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k004.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k005.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k006.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k007.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k008.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k009.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k010.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k011.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k012.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k013.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k014.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k015.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k016.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k017.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k018.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k019.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k020.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k021.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k022.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k023.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k024.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k025.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k026.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k027.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k028.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k029.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k030.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k031.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k032.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k033.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k034.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k035.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k036.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k037.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k038.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k039.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k040.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k041.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k042.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k043.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k044.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k045.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k046.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k047.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k048.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k049.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k050.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k051.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k052.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k053.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k054.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k055.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k056.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k057.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k058.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k059.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k060.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k061.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k062.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k063.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "components/k064.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+    "figures/components_vs_k.png": "c52877896f777cc11ff64d9fc97ed5c144e721b164031333cd0e00414a225365",
+    "figures/largest_component_fraction_vs_k.png": "0662189c355efdf7feeff93417f192c2e5e6d9c470dd862e702f1883c31a14d7",
+    "graphs/k002.npz": "2b19ea6a998117b7225907f1f2d40614b541d11af8a7598b3575366152b2a820",
+    "graphs/k003.npz": "d3e1adfc6a5b742c15fbdc2c038c19572db937fa758a1be217254a8d7d4d28a6",
+    "graphs/k004.npz": "b6e48291f684684ee5de12a6ab27579f5c2981855ed9a962b946e224d0b92baa",
+    "graphs/k005.npz": "a2b1183f36e3fef12d9a5991da639e08042ebd4adfeefdebb65553ac54323de5",
+    "graphs/k006.npz": "6d20e7deb8d3915f50584db40837055b95c060e43f6eff9ec4236ac3a9fef09d",
+    "graphs/k007.npz": "e307739f881363f5de9d06c207357389212f38f0dd4317ec7cda2e8c3e35f90e",
+    "graphs/k008.npz": "3994cc9b3b644adb02b993c68c70f0a1e63a0ad08e3501f49942ce794bc7def1",
+    "graphs/k009.npz": "4b6832e4060f3d100084258701e13daa0b1af33c4b03e763eb026ec4d5abfbd5",
+    "graphs/k010.npz": "e6826f9a0182e4e191ac19c9da3d00a6e8fadbefcd5fe4cc361ddbb90436c560",
+    "graphs/k011.npz": "e9d0c3cdca0d19bcb29903f24ce2bc08df904cce85f7b80bc9f4f033da8b2936",
+    "graphs/k012.npz": "83a56eb1adb30341c9a9dca9e944451d475a798fe97fa97fed9d1a73c955b959",
+    "graphs/k013.npz": "3ad39f02cae1aa421b83f5cc2202f292f348ed4e4a8bf00fb837aaa26a44211f",
+    "graphs/k014.npz": "213d07b0a6609ac8ce638a157a8200f6214d54c31080cbee49be0af8d422cc67",
+    "graphs/k015.npz": "12e915c36bc3064cfe46c084774bf10e5dc1b8dc0c4c09598025b36c1e4493e6",
+    "graphs/k016.npz": "40b61c86ccb7e58388c70ee3ebf97de40a29cea66305447dfcd7e684b2b034fa",
+    "graphs/k017.npz": "07570ceccb2a99322a3f5c617d43d4eadbd6d9d35b362ce8e4583d12234c103b",
+    "graphs/k018.npz": "9b488a021d666e8484c324e74ca2641985855c77b18123973014a01efea05a73",
+    "graphs/k019.npz": "4089b6193dc38d2bb3e8b7ce37aafd271390841b931761cfc88c4e731bce4d5a",
+    "graphs/k020.npz": "4baaf9e9c0b4a10e744cfa3bdf754490c89d5313a8efb17ba1d3bce565b15732",
+    "graphs/k021.npz": "ed535bee1f698b3cdf79293e690a1127581bc57efa210086c5e3c37920e2301b",
+    "graphs/k022.npz": "3dfb49f1e20101089c8b40bc55c3f6a805507201e7befd8de4bfdeb92bdd38d3",
+    "graphs/k023.npz": "21bc33ddf52502a11de427f9cb96d2a1b2fd01e53948083f3203dfba2e0ef5af",
+    "graphs/k024.npz": "006b28c4837907a7f3fdbf00bce8932bba77d4318a94df02c372e7a7fc146f65",
+    "graphs/k025.npz": "76ebd929abe0acfb91557a0172e63507da65dea86e2d8d9595f65e17818abe9a",
+    "graphs/k026.npz": "beecb7d34fdb0f0366925042142b4e6b76496b69a3f3582d9e55eed233a6b8f8",
+    "graphs/k027.npz": "495dc6a797bf80660b475f0c6faade816eb4d744dafdbfd31ee2322b3c925f23",
+    "graphs/k028.npz": "3f34c8023a62d86c668eb632bee32486893af69c59f92b77ff793803a01cf23a",
+    "graphs/k029.npz": "b7c454ea8cf3b465703b2cfd28fbb06d9da6951f9effa3c68071469b641b0b1e",
+    "graphs/k030.npz": "88a3226e378269a78f23c9f8d2ee99cd282e6d184c61d54178dc8b32bc856233",
+    "graphs/k031.npz": "b4fc23821e2fee31bea44c8e1cbf38b6ceac8fbafb0875195a799cdf88cf78ce",
+    "graphs/k032.npz": "4b73d93c776e0757e9b940219758edca58613494b4b8c902c6062171b1d1f588",
+    "graphs/k033.npz": "96d7acf6bb9b9f29dd73370d2f2a60aaf25c77b74f6b4e95bb384ce9ed54a579",
+    "graphs/k034.npz": "e0b91ee16a0da14e6ba353a15ce5150d1e5222c0f684f9f2d95f5ba5bc156c62",
+    "graphs/k035.npz": "71aa09b0d18c552aaca1bbd6db6042c688e04c14fd751de2b989b12f718bc194",
+    "graphs/k036.npz": "2b95187cfc203bdb8348858e884fc5974cf93984bb88a5eb55918f1594f2f451",
+    "graphs/k037.npz": "87b4b67eb5c3706a281c1e23a135c41007efa25662138474124d89b046d5800f",
+    "graphs/k038.npz": "c5105b0a88896cbc106db3b489954ca8d2b9ea2a3732df3cefb552e105431bba",
+    "graphs/k039.npz": "883799eb42b31db4082116c708ec7fda7a05bac969be3528b537a58bb08855c7",
+    "graphs/k040.npz": "b73a43d0d36cb2a7238901e2fb92019db411b205532f47e3432ed7d0338f1ba3",
+    "graphs/k041.npz": "0ab4cd213d0f24561b6423e235ca0b5dbcb52f4e5a00a44fc93a62a01181707c",
+    "graphs/k042.npz": "05d86ba2aa55134347c236b82051a9790dcc0fe2cddca8df279c06f013ea4cc1",
+    "graphs/k043.npz": "ffe415b8446fdfed9e5e70b35cacacc3bbd5c899094a7c25f0c826d3e70a0d68",
+    "graphs/k044.npz": "c34f8985aa6df2d84961ebe50675603cd1274cac62f8c462f5dfc81fc3895f48",
+    "graphs/k045.npz": "f07d3dfaf0338433cc6c807477acfedb14f658fb24e26cb625e8baf8ea6022f6",
+    "graphs/k046.npz": "fa75e5daada845b41c16ddd9e0d623538feba35cf592a6c3bd251d84c5ec07ee",
+    "graphs/k047.npz": "2265d7202e5cc03ba90a60951d70ce4e0c4565ec308f703cc4f0df2d7dec15dd",
+    "graphs/k048.npz": "fbcca5b75e2daca51a2672acef0196a3da1db049cdc11550a13f23bf835c2765",
+    "graphs/k049.npz": "fdd28378173e9357fa59c41f7bffad8dfc315b87ed66b8544018d8b6ddf46d19",
+    "graphs/k050.npz": "ccdaadaf7825689643a12eade6d04ef33c96eef6662f962caa13727776f054e9",
+    "graphs/k051.npz": "b09557d2197ed66fa5a51eba7feebc0a8a39f07619a78c5abc67f9b32d9ee1e3",
+    "graphs/k052.npz": "def3a90d1c72f18f85373bd786ee542403afbd77646e0920cf967e56d313d6d7",
+    "graphs/k053.npz": "c1a29fdc73b9e0759b657a1b1e05a780f2199f4214c58bf5467d0bcb8e5664b2",
+    "graphs/k054.npz": "5ad42c1c56b74484cee302adbc710e91d0b74fcd3397853acaa9a137a029332a",
+    "graphs/k055.npz": "5df2dd8bc6c999729140bc254516fc1b0a3113fd9b72fa72bb4b6d8b1cb214e0",
+    "graphs/k056.npz": "00ec1f22391acc105ccdc6d63a35bff0dfd3817cf5e60b33303a77cb464c0df1",
+    "graphs/k057.npz": "d59ae00b6a0c782d3b911b738292195366fe1f21560664580379c702cd5c6c05",
+    "graphs/k058.npz": "f32e7ce56337c1d9d5db8ad72c58b34ab42fec79dcdd5d171979d954f114e994",
+    "graphs/k059.npz": "82912f1bbd0a1c7876e89c7315db3458d789ac316f2cd603b378c03e0a77cf7a",
+    "graphs/k060.npz": "94f2b71ba2a3c93448cecc6a08a96cab1dab16d1add49b24d10c67bfe8e1f1be",
+    "graphs/k061.npz": "c45e2431c973713b1b248d8a1424a428766f99236be7671dbc3037f2937f4bf0",
+    "graphs/k062.npz": "21288a60579548db81133038235304d85af58e33a19191528a8799fcb7158634",
+    "graphs/k063.npz": "cc6d485dc60f1cb3418a1ac3f46224ce4b4b3a1af5f084efe82c660ec9c08228",
+    "graphs/k064.npz": "9f5d5de8df67216d1f6a754f6996fc83851fe014774fde50675f04f0c2563376",
+    "validation.json": "f055dc1ba49dd9421bec2ff01d5a41a7bb3a1dfee54fe03041f72ef039629de1"
+  },
+  "audit": {
+    "status": "passed",
+    "time_utc": "2026-09-23T23:45:42.409334+00:00",
+    "errors": [],
+    "input_manifest_sha256": "6fb2d6d494fb1b7c8dedb9c8918caf4707ee58c8b47608a535ff23ac07f16aa9",
+    "labels_sha256": "57fe21c58a2387bd5c961a2749e453234956d8304dd7a27a5b166a3833da7fe3",
+    "repository_commit": "cafd8e20c265ed84f1e61f1c875327971f43a62f",
+    "sampling": "Uniformly shuffle 100 official mood/theme feature shards; download first 12; validate eligible tracks; sample 2000 uniformly from those tracks using seed 521. This is a two-stage pilot sample, not a uniform sample of the full dataset.",
+    "source_metadata_hashes": {
+      "source_metadata/raw_30s_cleantags_50artists.tsv": "a30655f45f4a7b4f9dba2d6b51d78733be33687eae3e8b9795e2234d54ef4e56",
+      "source_metadata/autotagging_moodtheme.tsv": "c920e97252586f3e570fa89c4708adcd45a1924dc0e3d3460ac65788257865a8",
+      "source_metadata/raw.meta.tsv": "bb1efa2876536cbe1a8b67db5dda15249ca144f0cff69e481b638803cbdc9aca",
+      "source_metadata/autotagging_moodtheme_acousticbrainz_sha256_tars.txt": "5cbc397aaaafa32eef9b2f95241e78d216d0052c431899836642a381668f96bb",
+      "source_metadata/autotagging_moodtheme_acousticbrainz_sha256_tracks.txt": "730022d878b7da60c5bbcfd7b09fadaf81727b977157aee91b1ddd1ae080fd72",
+      "source_metadata/README.md": "309d29cbe6ffcd8d060a2308c14ee187bc3fc312322bf981156c0f3a890360d3",
+      "source_metadata/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source_metadata/CITATION.bib": "61bf532c457c5287bfa3ff02dc9b817539d3ab7ebc73b7c5ae87db8d54159607",
+      "source_metadata/audio_licenses.txt": "c207c476d1714dfc9061f5ae9f2047c0490bfaa5d861dc090acc786508948933"
+    },
+    "n_records": 2000,
+    "unique_ids": 2000,
+    "verified_tracks": 2000,
+    "field_statistics": {
+      "lowlevel.mfcc.mean": {
+        "expected_shape": [
+          13
+        ],
+        "valid_count": 2000,
+        "min": -994.455322266,
+        "max": 288.396392822,
+        "missing_or_invalid_rate": 0.0
+      },
+      "lowlevel.mfcc.cov": {
+        "expected_shape": [
+          13,
+          13
+        ],
+        "valid_count": 2000,
+        "min": -7558.14892578,
+        "max": 42731.1015625,
+        "missing_or_invalid_rate": 0.0
+      },
+      "tonal.hpcp.mean": {
+        "expected_shape": [
+          36
+        ],
+        "valid_count": 2000,
+        "min": 5.89868432144e-05,
+        "max": 0.884159982204,
+        "missing_or_invalid_rate": 0.0
+      },
+      "tonal.hpcp.var": {
+        "expected_shape": [
+          36
+        ],
+        "valid_count": 2000,
+        "min": 4.01569231201e-08,
+        "max": 0.239504173398,
+        "missing_or_invalid_rate": 0.0
+      },
+      "rhythm.bpm": {
+        "expected_shape": [],
+        "valid_count": 2000,
+        "min": 65.0009078979,
+        "max": 184.570556641,
+        "missing_or_invalid_rate": 0.0
+      },
+      "rhythm.onset_rate": {
+        "expected_shape": [],
+        "valid_count": 2000,
+        "min": 0.0146909113973,
+        "max": 8.2315120697,
+        "missing_or_invalid_rate": 0.0
+      }
+    },
+    "clipped_variances": [],
+    "negative_variance_tolerance_rule": "1e-10 * max(1, max(abs(variance_vector)))",
+    "extractor_versions": [
+      {
+        "version": {
+          "essentia": "2.1-beta2",
+          "essentia_git_sha": "v2.1_beta2",
+          "extractor": "music 1.0"
+        },
+        "count": 2000
+      }
+    ],
+    "n_nodes": 2000,
+    "artist_count": 673,
+    "artist_track_counts": {
+      "artist_000087": 3,
+      "artist_000326": 1,
+      "artist_000517": 1,
+      "artist_000560": 23,
+      "artist_000675": 1,
+      "artist_000696": 4,
+      "artist_000787": 1,
+      "artist_000811": 10,
+      "artist_000937": 2,
+      "artist_000939": 1,
+      "artist_001064": 1,
+      "artist_001336": 6,
+      "artist_001365": 1,
+      "artist_001493": 2,
+      "artist_001780": 1,
+      "artist_001885": 2,
+      "artist_001907": 1,
+      "artist_002020": 2,
+      "artist_002023": 1,
+      "artist_002034": 3,
+      "artist_002054": 7,
+      "artist_002189": 6,
+      "artist_002208": 4,
+      "artist_002222": 1,
+      "artist_002323": 2,
+      "artist_002444": 2,
+      "artist_002449": 1,
+      "artist_002455": 2,
+      "artist_002521": 3,
+      "artist_002534": 1,
+      "artist_002656": 7,
+      "artist_002740": 8,
+      "artist_002741": 3,
+      "artist_002816": 2,
+      "artist_002854": 1,
+      "artist_002986": 1,
+      "artist_003004": 1,
+      "artist_003025": 2,
+      "artist_003039": 1,
+      "artist_003177": 1,
+      "artist_003498": 1,
+      "artist_003573": 1,
+      "artist_003581": 2,
+      "artist_003682": 2,
+      "artist_003687": 3,
+      "artist_003769": 1,
+      "artist_003786": 8,
+      "artist_003815": 1,
+      "artist_003944": 39,
+      "artist_004056": 1,
+      "artist_004116": 7,
+      "artist_004118": 11,
+      "artist_004142": 1,
+      "artist_004163": 1,
+      "artist_004180": 1,
+      "artist_004347": 1,
+      "artist_004488": 1,
+      "artist_004545": 1,
+      "artist_004658": 2,
+      "artist_004729": 4,
+      "artist_004777": 1,
+      "artist_004812": 5,
+      "artist_004851": 1,
+      "artist_004864": 2,
+      "artist_004934": 8,
+      "artist_004965": 6,
+      "artist_005096": 1,
+      "artist_005117": 1,
+      "artist_005126": 3,
+      "artist_005240": 19,
+      "artist_005279": 1,
+      "artist_005324": 1,
+      "artist_005361": 1,
+      "artist_005365": 1,
+      "artist_005385": 7,
+      "artist_005390": 1,
+      "artist_005422": 1,
+      "artist_005544": 1,
+      "artist_005634": 2,
+      "artist_005644": 1,
+      "artist_005669": 1,
+      "artist_005681": 1,
+      "artist_005721": 4,
+      "artist_005777": 1,
+      "artist_005801": 7,
+      "artist_005935": 1,
+      "artist_005951": 1,
+      "artist_006278": 2,
+      "artist_006573": 2,
+      "artist_006741": 1,
+      "artist_006821": 1,
+      "artist_006845": 3,
+      "artist_006899": 1,
+      "artist_006905": 2,
+      "artist_006916": 5,
+      "artist_006987": 1,
+      "artist_007063": 25,
+      "artist_007211": 1,
+      "artist_007320": 1,
+      "artist_007349": 2,
+      "artist_007362": 2,
+      "artist_007379": 1,
+      "artist_007506": 1,
+      "artist_007584": 6,
+      "artist_007597": 2,
+      "artist_007625": 1,
+      "artist_007635": 1,
+      "artist_007805": 16,
+      "artist_007840": 1,
+      "artist_007862": 5,
+      "artist_007872": 12,
+      "artist_007886": 1,
+      "artist_007907": 1,
+      "artist_007969": 1,
+      "artist_008004": 3,
+      "artist_008021": 4,
+      "artist_008094": 33,
+      "artist_336426": 1,
+      "artist_336621": 1,
+      "artist_336764": 1,
+      "artist_336871": 2,
+      "artist_336896": 1,
+      "artist_336984": 1,
+      "artist_337114": 7,
+      "artist_337159": 1,
+      "artist_337281": 1,
+      "artist_337284": 1,
+      "artist_337293": 2,
+      "artist_337307": 1,
+      "artist_337346": 1,
+      "artist_337391": 2,
+      "artist_337428": 1,
+      "artist_337503": 1,
+      "artist_337741": 21,
+      "artist_337897": 1,
+      "artist_337907": 1,
+      "artist_337939": 2,
+      "artist_337989": 2,
+      "artist_338108": 1,
+      "artist_338130": 1,
+      "artist_338395": 2,
+      "artist_338437": 1,
+      "artist_338444": 1,
+      "artist_338447": 5,
+      "artist_338563": 1,
+      "artist_338582": 3,
+      "artist_338649": 2,
+      "artist_338660": 22,
+      "artist_338779": 6,
+      "artist_338900": 1,
+      "artist_339104": 1,
+      "artist_339169": 4,
+      "artist_339226": 1,
+      "artist_339263": 1,
+      "artist_339344": 1,
+      "artist_339527": 2,
+      "artist_339563": 1,
+      "artist_339574": 1,
+      "artist_339590": 1,
+      "artist_339778": 1,
+      "artist_339989": 2,
+      "artist_340076": 2,
+      "artist_340121": 14,
+      "artist_340218": 1,
+      "artist_340225": 3,
+      "artist_340262": 3,
+      "artist_340347": 1,
+      "artist_340444": 1,
+      "artist_340542": 3,
+      "artist_340553": 6,
+      "artist_340652": 3,
+      "artist_340663": 1,
+      "artist_340710": 4,
+      "artist_340947": 3,
+      "artist_341049": 1,
+      "artist_341278": 1,
+      "artist_341323": 4,
+      "artist_341355": 1,
+      "artist_341393": 8,
+      "artist_341459": 2,
+      "artist_341528": 1,
+      "artist_341542": 2,
+      "artist_341642": 3,
+      "artist_341778": 1,
+      "artist_341912": 3,
+      "artist_341968": 2,
+      "artist_341999": 1,
+      "artist_342174": 3,
+      "artist_342686": 1,
+      "artist_342854": 4,
+      "artist_343151": 1,
+      "artist_343154": 1,
+      "artist_343433": 1,
+      "artist_343489": 1,
+      "artist_343767": 4,
+      "artist_344764": 7,
+      "artist_345704": 1,
+      "artist_345894": 1,
+      "artist_346564": 1,
+      "artist_347359": 3,
+      "artist_347536": 1,
+      "artist_347673": 18,
+      "artist_347734": 4,
+      "artist_347867": 4,
+      "artist_347916": 3,
+      "artist_348064": 1,
+      "artist_348254": 1,
+      "artist_348313": 1,
+      "artist_348501": 1,
+      "artist_348759": 6,
+      "artist_349009": 1,
+      "artist_349335": 2,
+      "artist_349503": 1,
+      "artist_349895": 1,
+      "artist_350059": 1,
+      "artist_350065": 1,
+      "artist_350115": 1,
+      "artist_350154": 3,
+      "artist_350222": 1,
+      "artist_350284": 3,
+      "artist_350333": 1,
+      "artist_350716": 1,
+      "artist_350722": 1,
+      "artist_350774": 2,
+      "artist_350813": 1,
+      "artist_351032": 4,
+      "artist_351213": 1,
+      "artist_351221": 1,
+      "artist_351312": 1,
+      "artist_351337": 2,
+      "artist_351437": 2,
+      "artist_351494": 1,
+      "artist_351588": 2,
+      "artist_351712": 1,
+      "artist_351898": 1,
+      "artist_352042": 2,
+      "artist_352097": 2,
+      "artist_352114": 1,
+      "artist_352130": 3,
+      "artist_352172": 1,
+      "artist_352184": 3,
+      "artist_352230": 1,
+      "artist_352232": 1,
+      "artist_352416": 5,
+      "artist_352428": 6,
+      "artist_352814": 2,
+      "artist_352844": 3,
+      "artist_352860": 1,
+      "artist_352870": 1,
+      "artist_353294": 3,
+      "artist_353511": 1,
+      "artist_353520": 1,
+      "artist_353741": 2,
+      "artist_354405": 1,
+      "artist_354832": 1,
+      "artist_354858": 1,
+      "artist_354904": 1,
+      "artist_355162": 1,
+      "artist_355274": 1,
+      "artist_355362": 8,
+      "artist_355460": 1,
+      "artist_355675": 2,
+      "artist_355753": 1,
+      "artist_355756": 9,
+      "artist_355779": 1,
+      "artist_355889": 3,
+      "artist_356326": 1,
+      "artist_356482": 1,
+      "artist_356592": 3,
+      "artist_356678": 1,
+      "artist_356877": 4,
+      "artist_356880": 1,
+      "artist_357291": 3,
+      "artist_357317": 17,
+      "artist_357359": 6,
+      "artist_357887": 1,
+      "artist_358060": 2,
+      "artist_358348": 5,
+      "artist_358739": 1,
+      "artist_359034": 13,
+      "artist_359114": 2,
+      "artist_359452": 3,
+      "artist_359472": 1,
+      "artist_359617": 1,
+      "artist_359735": 2,
+      "artist_359828": 1,
+      "artist_360077": 1,
+      "artist_360311": 1,
+      "artist_360980": 1,
+      "artist_361044": 6,
+      "artist_361274": 3,
+      "artist_361501": 1,
+      "artist_361660": 1,
+      "artist_361694": 4,
+      "artist_362390": 2,
+      "artist_362433": 1,
+      "artist_362473": 2,
+      "artist_362501": 11,
+      "artist_362636": 4,
+      "artist_362935": 3,
+      "artist_362955": 1,
+      "artist_363226": 1,
+      "artist_363229": 12,
+      "artist_363557": 2,
+      "artist_363592": 5,
+      "artist_364032": 2,
+      "artist_364441": 1,
+      "artist_364644": 4,
+      "artist_364878": 1,
+      "artist_365072": 2,
+      "artist_365142": 4,
+      "artist_365532": 3,
+      "artist_366067": 1,
+      "artist_366162": 8,
+      "artist_366251": 1,
+      "artist_366415": 1,
+      "artist_366456": 1,
+      "artist_366549": 2,
+      "artist_366613": 10,
+      "artist_366701": 3,
+      "artist_366940": 1,
+      "artist_367334": 1,
+      "artist_367651": 1,
+      "artist_367696": 1,
+      "artist_367887": 17,
+      "artist_367947": 7,
+      "artist_367979": 3,
+      "artist_367988": 2,
+      "artist_368136": 1,
+      "artist_368142": 3,
+      "artist_368759": 1,
+      "artist_368762": 5,
+      "artist_368880": 1,
+      "artist_368975": 1,
+      "artist_369008": 1,
+      "artist_369019": 1,
+      "artist_369180": 5,
+      "artist_369391": 3,
+      "artist_369472": 1,
+      "artist_369534": 1,
+      "artist_370191": 2,
+      "artist_370314": 1,
+      "artist_370490": 1,
+      "artist_370714": 1,
+      "artist_370748": 1,
+      "artist_370759": 2,
+      "artist_370789": 3,
+      "artist_370822": 1,
+      "artist_370988": 1,
+      "artist_371031": 1,
+      "artist_371382": 1,
+      "artist_371727": 2,
+      "artist_372323": 4,
+      "artist_373002": 1,
+      "artist_373067": 1,
+      "artist_373214": 2,
+      "artist_373547": 1,
+      "artist_374130": 1,
+      "artist_374229": 2,
+      "artist_375104": 34,
+      "artist_375327": 1,
+      "artist_375935": 11,
+      "artist_377663": 1,
+      "artist_378587": 1,
+      "artist_378695": 3,
+      "artist_378701": 1,
+      "artist_378747": 1,
+      "artist_379099": 2,
+      "artist_381661": 2,
+      "artist_386200": 1,
+      "artist_396983": 1,
+      "artist_416786": 1,
+      "artist_418612": 1,
+      "artist_419285": 2,
+      "artist_419438": 23,
+      "artist_420364": 1,
+      "artist_420796": 1,
+      "artist_421279": 1,
+      "artist_421686": 6,
+      "artist_422519": 1,
+      "artist_423187": 1,
+      "artist_423882": 1,
+      "artist_423996": 11,
+      "artist_424916": 2,
+      "artist_425159": 1,
+      "artist_426192": 2,
+      "artist_426277": 1,
+      "artist_427108": 7,
+      "artist_427606": 2,
+      "artist_427777": 3,
+      "artist_427960": 2,
+      "artist_428049": 1,
+      "artist_428449": 10,
+      "artist_428489": 2,
+      "artist_428829": 1,
+      "artist_428874": 2,
+      "artist_428877": 1,
+      "artist_428971": 7,
+      "artist_429523": 1,
+      "artist_430126": 2,
+      "artist_430269": 2,
+      "artist_430396": 5,
+      "artist_430947": 1,
+      "artist_431036": 1,
+      "artist_431049": 3,
+      "artist_431108": 1,
+      "artist_431325": 1,
+      "artist_431465": 1,
+      "artist_431744": 6,
+      "artist_432124": 1,
+      "artist_432273": 14,
+      "artist_432466": 1,
+      "artist_432521": 2,
+      "artist_432545": 2,
+      "artist_432564": 2,
+      "artist_432967": 2,
+      "artist_433117": 1,
+      "artist_433123": 3,
+      "artist_433381": 2,
+      "artist_433608": 1,
+      "artist_434091": 1,
+      "artist_434337": 1,
+      "artist_434578": 2,
+      "artist_434847": 1,
+      "artist_434945": 2,
+      "artist_434948": 3,
+      "artist_434980": 1,
+      "artist_435483": 1,
+      "artist_435614": 1,
+      "artist_435725": 4,
+      "artist_435792": 1,
+      "artist_435845": 2,
+      "artist_435953": 1,
+      "artist_435992": 8,
+      "artist_436282": 1,
+      "artist_436349": 1,
+      "artist_436558": 1,
+      "artist_436872": 5,
+      "artist_436908": 1,
+      "artist_437571": 8,
+      "artist_437812": 7,
+      "artist_437980": 40,
+      "artist_437998": 3,
+      "artist_438155": 2,
+      "artist_438161": 1,
+      "artist_438603": 11,
+      "artist_438910": 19,
+      "artist_438966": 2,
+      "artist_439286": 1,
+      "artist_439289": 2,
+      "artist_439371": 8,
+      "artist_439372": 1,
+      "artist_439398": 2,
+      "artist_439567": 1,
+      "artist_439604": 4,
+      "artist_439935": 1,
+      "artist_440452": 3,
+      "artist_440794": 4,
+      "artist_440879": 2,
+      "artist_441157": 3,
+      "artist_441505": 32,
+      "artist_441585": 3,
+      "artist_441650": 1,
+      "artist_441694": 3,
+      "artist_441699": 1,
+      "artist_441727": 1,
+      "artist_441810": 1,
+      "artist_441841": 1,
+      "artist_442381": 1,
+      "artist_442397": 2,
+      "artist_442477": 2,
+      "artist_442559": 1,
+      "artist_442600": 1,
+      "artist_442612": 2,
+      "artist_442664": 2,
+      "artist_442862": 1,
+      "artist_443173": 3,
+      "artist_443553": 8,
+      "artist_443569": 1,
+      "artist_443769": 2,
+      "artist_444350": 2,
+      "artist_444361": 1,
+      "artist_444486": 1,
+      "artist_448491": 1,
+      "artist_448542": 2,
+      "artist_448635": 1,
+      "artist_448643": 6,
+      "artist_448664": 1,
+      "artist_450929": 1,
+      "artist_451073": 8,
+      "artist_451078": 1,
+      "artist_452142": 3,
+      "artist_452157": 3,
+      "artist_452659": 1,
+      "artist_452945": 6,
+      "artist_453529": 1,
+      "artist_454118": 6,
+      "artist_454134": 3,
+      "artist_454426": 1,
+      "artist_455057": 6,
+      "artist_455072": 3,
+      "artist_455091": 1,
+      "artist_455463": 1,
+      "artist_455493": 1,
+      "artist_455689": 1,
+      "artist_455760": 1,
+      "artist_456650": 5,
+      "artist_456894": 3,
+      "artist_457205": 1,
+      "artist_457221": 1,
+      "artist_457223": 1,
+      "artist_457524": 1,
+      "artist_457665": 1,
+      "artist_457860": 1,
+      "artist_457998": 1,
+      "artist_458008": 1,
+      "artist_458036": 1,
+      "artist_458175": 3,
+      "artist_459422": 3,
+      "artist_460032": 1,
+      "artist_460234": 1,
+      "artist_460241": 1,
+      "artist_460469": 8,
+      "artist_460519": 2,
+      "artist_460992": 7,
+      "artist_461256": 1,
+      "artist_461418": 5,
+      "artist_461539": 3,
+      "artist_461766": 1,
+      "artist_462340": 3,
+      "artist_462377": 4,
+      "artist_462768": 1,
+      "artist_463083": 1,
+      "artist_463180": 1,
+      "artist_463402": 1,
+      "artist_463441": 1,
+      "artist_464476": 1,
+      "artist_464757": 1,
+      "artist_464776": 1,
+      "artist_464915": 1,
+      "artist_465078": 1,
+      "artist_465566": 1,
+      "artist_466436": 3,
+      "artist_466508": 1,
+      "artist_466600": 16,
+      "artist_466801": 1,
+      "artist_466868": 1,
+      "artist_467034": 1,
+      "artist_467467": 2,
+      "artist_467612": 1,
+      "artist_468830": 3,
+      "artist_469116": 6,
+      "artist_469255": 1,
+      "artist_470512": 2,
+      "artist_470592": 1,
+      "artist_471813": 18,
+      "artist_471837": 1,
+      "artist_472293": 2,
+      "artist_472947": 1,
+      "artist_473030": 1,
+      "artist_473090": 1,
+      "artist_473960": 1,
+      "artist_474067": 1,
+      "artist_474866": 2,
+      "artist_475035": 1,
+      "artist_475635": 1,
+      "artist_475732": 1,
+      "artist_477067": 2,
+      "artist_477499": 1,
+      "artist_477618": 4,
+      "artist_477707": 1,
+      "artist_477775": 15,
+      "artist_479278": 1,
+      "artist_479439": 1,
+      "artist_479496": 1,
+      "artist_479521": 1,
+      "artist_480019": 1,
+      "artist_480321": 2,
+      "artist_480599": 8,
+      "artist_480605": 1,
+      "artist_480798": 1,
+      "artist_480887": 1,
+      "artist_480890": 1,
+      "artist_480962": 1,
+      "artist_481486": 4,
+      "artist_481897": 2,
+      "artist_482355": 2,
+      "artist_482680": 2,
+      "artist_482706": 1,
+      "artist_483163": 10,
+      "artist_483253": 3,
+      "artist_483387": 8,
+      "artist_483960": 7,
+      "artist_484321": 1,
+      "artist_484326": 2,
+      "artist_484368": 1,
+      "artist_484369": 3,
+      "artist_484759": 1,
+      "artist_484797": 4,
+      "artist_485239": 4,
+      "artist_485924": 1,
+      "artist_486064": 1,
+      "artist_486550": 8,
+      "artist_486606": 1,
+      "artist_486627": 1,
+      "artist_486695": 1,
+      "artist_486995": 1,
+      "artist_487051": 1,
+      "artist_487143": 1,
+      "artist_487296": 1,
+      "artist_487582": 1,
+      "artist_487628": 6,
+      "artist_487707": 1,
+      "artist_487711": 3,
+      "artist_488457": 1,
+      "artist_488716": 1,
+      "artist_488843": 2,
+      "artist_488943": 1,
+      "artist_488976": 1,
+      "artist_488990": 5,
+      "artist_489133": 1,
+      "artist_489220": 1,
+      "artist_489296": 1,
+      "artist_489349": 1,
+      "artist_489561": 3,
+      "artist_489627": 1,
+      "artist_489745": 1,
+      "artist_490028": 7,
+      "artist_490131": 5,
+      "artist_490314": 32,
+      "artist_490499": 2,
+      "artist_490560": 2,
+      "artist_490806": 1,
+      "artist_490851": 7,
+      "artist_490858": 14,
+      "artist_490859": 3,
+      "artist_490860": 4,
+      "artist_490945": 1,
+      "artist_491348": 1,
+      "artist_491533": 1,
+      "artist_491763": 1,
+      "artist_492062": 2,
+      "artist_492122": 3,
+      "artist_492255": 1,
+      "artist_492259": 5,
+      "artist_492266": 2,
+      "artist_492818": 2,
+      "artist_492919": 2,
+      "artist_492925": 1,
+      "artist_492989": 1,
+      "artist_493357": 1,
+      "artist_493718": 1,
+      "artist_493899": 1,
+      "artist_493908": 1,
+      "artist_494034": 3,
+      "artist_494174": 1,
+      "artist_494324": 1,
+      "artist_495239": 1,
+      "artist_495287": 2,
+      "artist_495449": 2,
+      "artist_495484": 2,
+      "artist_495620": 1,
+      "artist_495804": 3,
+      "artist_495923": 2,
+      "artist_496074": 6,
+      "artist_496314": 6,
+      "artist_496605": 1,
+      "artist_497141": 1,
+      "artist_497198": 6,
+      "artist_497200": 1,
+      "artist_497201": 1,
+      "artist_497202": 8,
+      "artist_497203": 2
+    },
+    "max_tracks_per_artist": 40,
+    "label_coverage": {
+      "genre": 1973,
+      "mood/theme": 2000,
+      "instrument": 1156
+    },
+    "label_counts": {
+      "genre": {
+        "60s": 9,
+        "70s": 11,
+        "80s": 10,
+        "90s": 13,
+        "acidjazz": 5,
+        "african": 4,
+        "alternative": 86,
+        "alternativerock": 5,
+        "ambient": 344,
+        "atmospheric": 72,
+        "blues": 29,
+        "bluesrock": 1,
+        "bossanova": 9,
+        "breakbeat": 11,
+        "celtic": 9,
+        "chanson": 4,
+        "chillout": 154,
+        "choir": 9,
+        "classical": 260,
+        "classicrock": 12,
+        "club": 27,
+        "contemporary": 6,
+        "country": 20,
+        "dance": 105,
+        "darkambient": 19,
+        "darkwave": 6,
+        "deephouse": 8,
+        "disco": 21,
+        "downtempo": 35,
+        "drumnbass": 11,
+        "dub": 10,
+        "dubstep": 12,
+        "easylistening": 231,
+        "edm": 10,
+        "electronic": 493,
+        "electronica": 11,
+        "electropop": 49,
+        "ethnicrock": 3,
+        "ethno": 13,
+        "eurodance": 10,
+        "experimental": 144,
+        "folk": 121,
+        "funk": 37,
+        "fusion": 12,
+        "gothic": 9,
+        "groove": 13,
+        "grunge": 15,
+        "hard": 11,
+        "hardrock": 11,
+        "heavymetal": 5,
+        "hiphop": 64,
+        "house": 74,
+        "idm": 7,
+        "improvisation": 13,
+        "indie": 97,
+        "industrial": 31,
+        "instrumentalpop": 19,
+        "instrumentalrock": 15,
+        "jazz": 73,
+        "jazzfunk": 3,
+        "jazzfusion": 7,
+        "latin": 25,
+        "lounge": 70,
+        "medieval": 4,
+        "metal": 36,
+        "minimal": 21,
+        "newage": 138,
+        "newwave": 2,
+        "orchestral": 175,
+        "oriental": 6,
+        "pop": 309,
+        "popfolk": 82,
+        "poprock": 81,
+        "postrock": 6,
+        "progressive": 43,
+        "psychedelic": 29,
+        "punkrock": 15,
+        "rap": 22,
+        "reggae": 15,
+        "rnb": 11,
+        "rock": 183,
+        "rocknroll": 8,
+        "singersongwriter": 43,
+        "ska": 3,
+        "soul": 5,
+        "soundtrack": 518,
+        "swing": 4,
+        "symphonic": 49,
+        "synthpop": 27,
+        "techno": 54,
+        "trance": 48,
+        "tribal": 15,
+        "triphop": 34,
+        "world": 60,
+        "worldfusion": 5
+      },
+      "mood/theme": {
+        "action": 47,
+        "adventure": 46,
+        "advertising": 83,
+        "ambiental": 58,
+        "background": 59,
+        "ballad": 35,
+        "calm": 49,
+        "children": 48,
+        "christmas": 74,
+        "commercial": 38,
+        "cool": 27,
+        "corporate": 74,
+        "dark": 122,
+        "deep": 63,
+        "documentary": 66,
+        "drama": 42,
+        "dramatic": 39,
+        "dream": 88,
+        "emotional": 148,
+        "energetic": 132,
+        "epic": 108,
+        "fast": 13,
+        "film": 171,
+        "fun": 50,
+        "funny": 28,
+        "game": 27,
+        "groovy": 20,
+        "happy": 178,
+        "heavy": 16,
+        "holiday": 22,
+        "hopeful": 21,
+        "horror": 20,
+        "inspiring": 107,
+        "love": 91,
+        "meditative": 88,
+        "melancholic": 40,
+        "mellow": 11,
+        "melodic": 124,
+        "motivational": 70,
+        "movie": 32,
+        "nature": 25,
+        "party": 24,
+        "positive": 67,
+        "powerful": 31,
+        "relaxing": 145,
+        "retro": 20,
+        "romantic": 59,
+        "sad": 85,
+        "sexy": 13,
+        "slow": 42,
+        "soft": 47,
+        "soundscape": 53,
+        "space": 60,
+        "sport": 44,
+        "summer": 58,
+        "trailer": 34,
+        "travel": 21,
+        "upbeat": 53,
+        "uplifting": 90
+      },
+      "instrument": {
+        "accordion": 11,
+        "acousticbassguitar": 17,
+        "acousticguitar": 102,
+        "bass": 236,
+        "beat": 21,
+        "bell": 34,
+        "bongo": 9,
+        "brass": 29,
+        "cello": 62,
+        "clarinet": 13,
+        "classicalguitar": 25,
+        "computer": 61,
+        "doublebass": 19,
+        "drummachine": 85,
+        "drums": 259,
+        "electricguitar": 160,
+        "electricpiano": 41,
+        "flute": 33,
+        "guitar": 161,
+        "harmonica": 13,
+        "harp": 24,
+        "horn": 25,
+        "keyboard": 107,
+        "oboe": 12,
+        "orchestra": 27,
+        "organ": 4,
+        "pad": 8,
+        "percussion": 66,
+        "piano": 390,
+        "pipeorgan": 11,
+        "rhodes": 14,
+        "sampler": 46,
+        "saxophone": 21,
+        "strings": 78,
+        "synthesizer": 361,
+        "trombone": 20,
+        "trumpet": 32,
+        "ukulele": 23,
+        "viola": 21,
+        "violin": 86,
+        "voice": 61
+      }
+    },
+    "duplicate_original_files": [],
+    "duplicate_feature_vectors": [
+      [
+        "track_0879150",
+        "track_0973754"
+      ],
+      [
+        "track_1234242",
+        "track_1244942"
+      ],
+      [
+        "track_1234390",
+        "track_1234442"
+      ]
+    ],
+    "feature_statistics": [
+      {
+        "name": "mfcc.mean.00",
+        "minimum": -994.455322266,
+        "maximum": -562.105285645,
+        "mean": -727.2764450073265,
+        "std": 73.47114168484337,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.mean.01",
+        "minimum": 0.108074426651,
+        "maximum": 288.396392822,
+        "mean": 155.79956599628522,
+        "std": 44.42041986395642,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.mean.02",
+        "minimum": -163.262802124,
+        "maximum": 118.643432617,
+        "mean": 10.983154546674088,
+        "std": 26.170170457359358,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.mean.03",
+        "minimum": -63.0447120667,
+        "maximum": 68.722618103,
+        "mean": 17.45084186214774,
+        "std": 18.51605089175877,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.mean.04",
+        "minimum": -75.8157424927,
+        "maximum": 51.0438690186,
+        "mean": 2.693903154009978,
+        "std": 12.866577699336585,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.mean.05",
+        "minimum": -76.3466033936,
+        "maximum": 45.2302970886,
+        "mean": 2.6022088805447616,
+        "std": 11.859628512273165,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.mean.06",
+        "minimum": -43.011756897,
+        "maximum": 32.4615440369,
+        "mean": -1.6139711056689225,
+        "std": 9.381769964916488,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.mean.07",
+        "minimum": -40.6061935425,
+        "maximum": 37.9702796936,
+        "mean": 0.7668287400537108,
+        "std": 8.672388432197163,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.mean.08",
+        "minimum": -35.9585762024,
+        "maximum": 27.3648052216,
+        "mean": -1.6820716786056742,
+        "std": 7.605313676827093,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.mean.09",
+        "minimum": -38.0641479492,
+        "maximum": 37.3732719421,
+        "mean": 0.08815894864550224,
+        "std": 6.750462535687869,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.mean.10",
+        "minimum": -21.816411972,
+        "maximum": 30.6392841339,
+        "mean": -1.539111629982711,
+        "std": 5.868659290745226,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.mean.11",
+        "minimum": -24.9582576752,
+        "maximum": 19.4578437805,
+        "mean": -0.5153577377367349,
+        "std": 5.227029087125002,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.mean.12",
+        "minimum": -24.7953662872,
+        "maximum": 20.0777454376,
+        "mean": -0.6590823658159995,
+        "std": 4.767635503920949,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.std.00",
+        "minimum": 28.420525282337763,
+        "maximum": 206.71502500423136,
+        "mean": 101.92715539780451,
+        "std": 24.538642022128922,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.std.01",
+        "minimum": 12.778790449490906,
+        "maximum": 100.71617569635971,
+        "mean": 46.210008580403745,
+        "std": 11.386973410048942,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.std.02",
+        "minimum": 10.717766986410929,
+        "maximum": 77.5595442879856,
+        "mean": 30.340676415618304,
+        "std": 8.708071437987268,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.std.03",
+        "minimum": 8.233830182405999,
+        "maximum": 56.441512090924704,
+        "mean": 20.949996130388374,
+        "std": 5.903757108196972,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.std.04",
+        "minimum": 6.57924006563828,
+        "maximum": 40.232581877503215,
+        "mean": 17.13722444003075,
+        "std": 4.361185030640536,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.std.05",
+        "minimum": 6.133035488084183,
+        "maximum": 36.5981546906398,
+        "mean": 15.226480481697031,
+        "std": 3.9058794408605646,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.std.06",
+        "minimum": 5.401899936013254,
+        "maximum": 41.75732065303041,
+        "mean": 13.857130201534561,
+        "std": 3.357134457111692,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.std.07",
+        "minimum": 5.777786454577566,
+        "maximum": 33.51561771562625,
+        "mean": 12.769080299640354,
+        "std": 2.997105575564541,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.std.08",
+        "minimum": 5.780302722755963,
+        "maximum": 42.248954082793574,
+        "mean": 12.153903814576683,
+        "std": 2.889400121786718,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.std.09",
+        "minimum": 5.222618268368846,
+        "maximum": 37.154382246512995,
+        "mean": 11.570964897948521,
+        "std": 2.7047272971317127,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.std.10",
+        "minimum": 5.1705233833239745,
+        "maximum": 28.49889277933443,
+        "mean": 11.095533538307055,
+        "std": 2.5992389213088494,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.std.11",
+        "minimum": 5.186733327075916,
+        "maximum": 33.327654342152556,
+        "mean": 10.76564014301401,
+        "std": 2.6492531021903227,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "mfcc.std.12",
+        "minimum": 5.3781696998235375,
+        "maximum": 31.81891224209275,
+        "mean": 10.446233094311308,
+        "std": 2.6253664746101144,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.00",
+        "minimum": 0.000567199254874,
+        "maximum": 0.790246188641,
+        "mean": 0.18414528281931247,
+        "std": 0.123329446050054,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.01",
+        "minimum": 0.000492661551107,
+        "maximum": 0.637643873692,
+        "mean": 0.13805051459724596,
+        "std": 0.08990332145933688,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.02",
+        "minimum": 0.000764626951423,
+        "maximum": 0.631486535072,
+        "mean": 0.08791034685904976,
+        "std": 0.05904252032027651,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.03",
+        "minimum": 0.0001234326337,
+        "maximum": 0.702344059944,
+        "mean": 0.09921407182707706,
+        "std": 0.08981246141064314,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.04",
+        "minimum": 0.000286250084173,
+        "maximum": 0.541066646576,
+        "mean": 0.08497364477373652,
+        "std": 0.06787315269823999,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.05",
+        "minimum": 0.000434303365182,
+        "maximum": 0.482586711645,
+        "mean": 0.09225713379334692,
+        "std": 0.061705282904422475,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.06",
+        "minimum": 0.000230757010286,
+        "maximum": 0.884159982204,
+        "mean": 0.13358499068328927,
+        "std": 0.10412682878253146,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.07",
+        "minimum": 0.00202700379305,
+        "maximum": 0.554801642895,
+        "mean": 0.11576928956946136,
+        "std": 0.07664804927064317,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.08",
+        "minimum": 0.00110776571091,
+        "maximum": 0.654148936272,
+        "mean": 0.125812907673368,
+        "std": 0.07686316622550575,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.09",
+        "minimum": 0.000391728972318,
+        "maximum": 0.796753942966,
+        "mean": 0.17657063861010439,
+        "std": 0.12846198006536708,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.10",
+        "minimum": 0.000298470957205,
+        "maximum": 0.590621590614,
+        "mean": 0.1315290495384798,
+        "std": 0.09055896740495216,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.11",
+        "minimum": 0.00191579968669,
+        "maximum": 0.450521856546,
+        "mean": 0.08134896871389548,
+        "std": 0.05777853948869218,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.12",
+        "minimum": 7.46781224734e-05,
+        "maximum": 0.642422676086,
+        "mean": 0.09078955135818569,
+        "std": 0.08793538320659368,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.13",
+        "minimum": 0.00032938804361,
+        "maximum": 0.541129589081,
+        "mean": 0.07939722607670242,
+        "std": 0.0698032381564972,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.14",
+        "minimum": 0.00160252675414,
+        "maximum": 0.570987284184,
+        "mean": 0.10430553539609543,
+        "std": 0.07065838912384612,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.15",
+        "minimum": 0.000704231613781,
+        "maximum": 0.869450688362,
+        "mean": 0.16578194100977425,
+        "std": 0.12022530499640649,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.16",
+        "minimum": 0.00054696702864,
+        "maximum": 0.612191557884,
+        "mean": 0.13668227230606858,
+        "std": 0.09028520456856083,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.17",
+        "minimum": 0.000612878415268,
+        "maximum": 0.533598959446,
+        "mean": 0.08967763890020322,
+        "std": 0.06116609797691338,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.18",
+        "minimum": 0.000167536563822,
+        "maximum": 0.567285776138,
+        "mean": 0.09298582714045078,
+        "std": 0.08705704711082816,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.19",
+        "minimum": 0.000400761695346,
+        "maximum": 0.598222315311,
+        "mean": 0.07677658385645719,
+        "std": 0.06441597544102215,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.20",
+        "minimum": 0.000828663469292,
+        "maximum": 0.56435573101,
+        "mean": 0.10088019256154564,
+        "std": 0.07213683901408244,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.21",
+        "minimum": 0.000314099306706,
+        "maximum": 0.881735742092,
+        "mean": 0.15675541356005496,
+        "std": 0.12157747215567297,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.22",
+        "minimum": 0.000615613884293,
+        "maximum": 0.527097761631,
+        "mean": 0.12839596233004383,
+        "std": 0.08370005807867138,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.23",
+        "minimum": 0.0008977491525,
+        "maximum": 0.567441940308,
+        "mean": 0.14077567489430107,
+        "std": 0.0777944976759332,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.24",
+        "minimum": 0.000545697519556,
+        "maximum": 0.877867639065,
+        "mean": 0.19156079772248863,
+        "std": 0.1349411034541524,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.25",
+        "minimum": 0.000466911849799,
+        "maximum": 0.701826155186,
+        "mean": 0.1227983985932236,
+        "std": 0.08923747235013191,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.26",
+        "minimum": 0.000951987400185,
+        "maximum": 0.463344573975,
+        "mean": 0.07347836389436509,
+        "std": 0.05768726665374787,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.27",
+        "minimum": 0.000110572327685,
+        "maximum": 0.706611692905,
+        "mean": 0.09433644801899925,
+        "std": 0.08923650343618858,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.28",
+        "minimum": 0.000804134411737,
+        "maximum": 0.472441613674,
+        "mean": 0.08239308090997048,
+        "std": 0.06642815595089356,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.29",
+        "minimum": 0.000736141926609,
+        "maximum": 0.481211125851,
+        "mean": 0.11203687409444811,
+        "std": 0.07307606347928791,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.30",
+        "minimum": 0.0022538639605,
+        "maximum": 0.799648821354,
+        "mean": 0.17331119523000613,
+        "std": 0.11888281701507154,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.31",
+        "minimum": 0.00271964399144,
+        "maximum": 0.546348392963,
+        "mean": 0.1354062242594051,
+        "std": 0.08560272097516905,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.32",
+        "minimum": 0.000940806407016,
+        "maximum": 0.524658620358,
+        "mean": 0.0883801988017247,
+        "std": 0.06111141590276853,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.33",
+        "minimum": 5.89868432144e-05,
+        "maximum": 0.701539099216,
+        "mean": 0.0991779080463792,
+        "std": 0.08790603480948596,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.34",
+        "minimum": 0.000379700155463,
+        "maximum": 0.493304818869,
+        "mean": 0.09402858576331016,
+        "std": 0.07030877750590336,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.mean.35",
+        "minimum": 0.00208497350104,
+        "maximum": 0.647903442383,
+        "mean": 0.1290168327523881,
+        "std": 0.07886397854673974,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.00",
+        "minimum": 0.004142290513640973,
+        "maximum": 0.45546061277897565,
+        "mean": 0.26490568725426455,
+        "std": 0.0934106010320124,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.01",
+        "minimum": 0.002797124819099069,
+        "maximum": 0.4540692717857045,
+        "mean": 0.20969466832641542,
+        "std": 0.07696014533957317,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.02",
+        "minimum": 0.0024486339765550915,
+        "maximum": 0.3901181365778833,
+        "mean": 0.16078751504189018,
+        "std": 0.06280823931869614,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.03",
+        "minimum": 0.00020039192378960784,
+        "maximum": 0.44307341575296527,
+        "mean": 0.1858259912492868,
+        "std": 0.09525986650263264,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.04",
+        "minimum": 0.0006225743922504362,
+        "maximum": 0.427201396238355,
+        "mean": 0.16450114610901745,
+        "std": 0.07610234218440241,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.05",
+        "minimum": 0.0020679981714160195,
+        "maximum": 0.37281352629028897,
+        "mean": 0.16315174117624015,
+        "std": 0.060038974079406726,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.06",
+        "minimum": 0.0023174971699874846,
+        "maximum": 0.45278934674967786,
+        "mean": 0.21754559877352744,
+        "std": 0.09193828283210678,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.07",
+        "minimum": 0.011342148358181531,
+        "maximum": 0.4284896453241315,
+        "mean": 0.19095203355940701,
+        "std": 0.07272697292724772,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.08",
+        "minimum": 0.0037738688177783816,
+        "maximum": 0.4108831594529034,
+        "mean": 0.1951132297119534,
+        "std": 0.06339017261754772,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.09",
+        "minimum": 0.0016072447006321097,
+        "maximum": 0.4698595584384764,
+        "mean": 0.2563912410645595,
+        "std": 0.10081170605008043,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.10",
+        "minimum": 0.0016099526631115587,
+        "maximum": 0.4547896391728818,
+        "mean": 0.20260448433263537,
+        "std": 0.08021381720722923,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.11",
+        "minimum": 0.009681975208262,
+        "maximum": 0.4477050821187984,
+        "mean": 0.15151025004302307,
+        "std": 0.06370693048579502,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.12",
+        "minimum": 0.0006374390136969967,
+        "maximum": 0.4833066911041063,
+        "mean": 0.17105737353691358,
+        "std": 0.09281400791794024,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.13",
+        "minimum": 0.0029743540968418672,
+        "maximum": 0.43499592716139307,
+        "mean": 0.15184624016595477,
+        "std": 0.07340437549995119,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.14",
+        "minimum": 0.00709391215591228,
+        "maximum": 0.3814683398409362,
+        "mean": 0.16983177506974603,
+        "std": 0.05864313096582772,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.15",
+        "minimum": 0.002711952303149891,
+        "maximum": 0.46029628183812216,
+        "mean": 0.2443925517980226,
+        "std": 0.09491396083643591,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.16",
+        "minimum": 0.0022649469875628435,
+        "maximum": 0.44789951498634156,
+        "mean": 0.21019726468008126,
+        "std": 0.07745783874885927,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.17",
+        "minimum": 0.0025024132392632518,
+        "maximum": 0.3575386732033333,
+        "mean": 0.1615733015890013,
+        "std": 0.06600160348791272,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.18",
+        "minimum": 0.0003405278823473931,
+        "maximum": 0.46186589641150166,
+        "mean": 0.1750928243734712,
+        "std": 0.09474812556531735,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.19",
+        "minimum": 0.004681525537920305,
+        "maximum": 0.4582615619152451,
+        "mean": 0.14930983430903202,
+        "std": 0.07158074664988673,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.20",
+        "minimum": 0.002583910912452285,
+        "maximum": 0.39832160236422026,
+        "mean": 0.16600042309726537,
+        "std": 0.06338711709817192,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.21",
+        "minimum": 0.0013270199918765354,
+        "maximum": 0.4840225506399469,
+        "mean": 0.2327436376234427,
+        "std": 0.0999616081620553,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.22",
+        "minimum": 0.002014678695065295,
+        "maximum": 0.4298093622968211,
+        "mean": 0.19656276854304375,
+        "std": 0.07638609978944971,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.23",
+        "minimum": 0.003953916004026893,
+        "maximum": 0.4277277732588802,
+        "mean": 0.20451665953744672,
+        "std": 0.05989525709783568,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.24",
+        "minimum": 0.002640959060048073,
+        "maximum": 0.4893916360114872,
+        "mean": 0.27678776941025457,
+        "std": 0.10589799153161478,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.25",
+        "minimum": 0.004632125842461536,
+        "maximum": 0.3976900906950034,
+        "mean": 0.1845236701604773,
+        "std": 0.07314114174973892,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.26",
+        "minimum": 0.005588095651239338,
+        "maximum": 0.4415957120217541,
+        "mean": 0.14087737713670515,
+        "std": 0.06286063579950317,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.27",
+        "minimum": 0.0010179216387718655,
+        "maximum": 0.43420852860463255,
+        "mean": 0.17348300568386002,
+        "std": 0.09415761580648904,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.28",
+        "minimum": 0.0032793719037797465,
+        "maximum": 0.4327935059713812,
+        "mean": 0.15365062162705773,
+        "std": 0.07353925357660535,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.29",
+        "minimum": 0.0060374360510236464,
+        "maximum": 0.38394495780124527,
+        "mean": 0.17909025417974514,
+        "std": 0.0651166525063019,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.30",
+        "minimum": 0.006392029264560669,
+        "maximum": 0.44110372185462227,
+        "mean": 0.25476334760544694,
+        "std": 0.09413510080514054,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.31",
+        "minimum": 0.004903387329612051,
+        "maximum": 0.44146940741573476,
+        "mean": 0.20886966418684294,
+        "std": 0.07712597172627594,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.32",
+        "minimum": 0.004531640993128207,
+        "maximum": 0.395223538939674,
+        "mean": 0.16241200200169328,
+        "std": 0.0648161988460022,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.33",
+        "minimum": 0.00023983288538626223,
+        "maximum": 0.4616500713050958,
+        "mean": 0.1860339660773684,
+        "std": 0.09038825775901109,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.34",
+        "minimum": 0.0017644845373649494,
+        "maximum": 0.40890856297954925,
+        "mean": 0.17571763045946454,
+        "std": 0.07688843192583723,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "hpcp.std.35",
+        "minimum": 0.004298168776339524,
+        "maximum": 0.4384987534509078,
+        "mean": 0.20327506349537353,
+        "std": 0.06640644802877822,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "rhythm.bpm",
+        "minimum": 65.0009078979,
+        "maximum": 184.570556641,
+        "mean": 122.60642426299775,
+        "std": 23.45285552249561,
+        "missing_rate": 0.0
+      },
+      {
+        "name": "rhythm.onset_rate",
+        "minimum": 0.0146909113973,
+        "maximum": 8.2315120697,
+        "mean": 3.444774037598625,
+        "std": 1.4540191420724928,
+        "missing_rate": 0.0
+      }
+    ],
+    "zero_variance_features": [],
+    "near_constant_features": [],
+    "node_order_hash": "daff48878747e04fd33484b4ff404a2b5bc60d6f4e55b851787c7202acd72b65",
+    "node_order_hash_definition": "SHA-256 of UTF-8 track IDs, each followed by LF, in node_index order",
+    "nodes_file_sha256": "f6b53ddc629dbde3946dccdf4c5a940531dd5c3d91229259f9316b45674b60a1"
+  },
+  "checks": {
+    "audit": {
+      "passed": true,
+      "actual": {
+        "verified_tracks": 2000,
+        "node_order_hash": "daff48878747e04fd33484b4ff404a2b5bc60d6f4e55b851787c7202acd72b65"
+      },
+      "tolerance": null,
+      "time_utc": "2026-09-23T23:45:48.418675+00:00"
+    },
+    "features_finite": {
+      "passed": true,
+      "actual": [
+        2000,
+        32
+      ],
+      "tolerance": null,
+      "time_utc": "2026-09-23T23:45:48.475410+00:00"
+    },
+    "pca_roundtrip_transform": {
+      "passed": true,
+      "actual": 0.0,
+      "tolerance": 1e-12,
+      "time_utc": "2026-09-23T23:45:48.487410+00:00"
+    },
+    "distances_finite": {
+      "passed": true,
+      "actual": [
+        2000,
+        2000
+      ],
+      "tolerance": null,
+      "time_utc": "2026-09-23T23:45:49.149762+00:00"
+    },
+    "distances_symmetric": {
+      "passed": true,
+      "actual": 0.0,
+      "tolerance": 1e-12,
+      "time_utc": "2026-09-23T23:45:49.206759+00:00"
+    },
+    "distances_zero_diagonal": {
+      "passed": true,
+      "actual": 0.0,
+      "tolerance": 0,
+      "time_utc": "2026-09-23T23:45:49.206759+00:00"
+    },
+    "similarities_finite": {
+      "passed": true,
+      "actual": [
+        2000,
+        2000
+      ],
+      "tolerance": null,
+      "time_utc": "2026-09-23T23:45:49.211757+00:00"
+    },
+    "similarities_symmetric": {
+      "passed": true,
+      "actual": 0.0,
+      "tolerance": 1e-12,
+      "time_utc": "2026-09-23T23:45:49.267758+00:00"
+    },
+    "similarities_zero_diagonal": {
+      "passed": true,
+      "actual": 0.0,
+      "tolerance": 0,
+      "time_utc": "2026-09-23T23:45:49.268759+00:00"
+    },
+    "distances_nonnegative": {
+      "passed": true,
+      "actual": 0.0,
+      "tolerance": 0,
+      "time_utc": "2026-09-23T23:45:49.272758+00:00"
+    },
+    "similarities_range": {
+      "passed": true,
+      "actual": [
+        0.0,
+        1.0
+      ],
+      "tolerance": [
+        0,
+        1
+      ],
+      "time_utc": "2026-09-23T23:45:49.280759+00:00"
+    },
+    "neighbors_exclude_self": {
+      "passed": true,
+      "actual": 0,
+      "tolerance": 0,
+      "time_utc": "2026-09-23T23:45:49.281760+00:00"
+    },
+    "retained_weights_positive": {
+      "passed": true,
+      "actual": 0.004766833195430271,
+      "tolerance": 0,
+      "time_utc": "2026-09-23T23:45:49.286758+00:00"
+    },
+    "graph_k002": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.02034768267995982,
+        "min_degree": 2,
+        "mean_degree": 3.311,
+        "lost_edges": 0,
+        "n_components": 2,
+        "largest_component_size": 1997
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:49.545323+00:00"
+    },
+    "graph_k003": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.0203044766009264,
+        "min_degree": 3,
+        "mean_degree": 4.888,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:49.559333+00:00"
+    },
+    "graph_k004": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.017385449664619548,
+        "min_degree": 4,
+        "mean_degree": 6.436,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:49.579333+00:00"
+    },
+    "graph_k005": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.01716786092122665,
+        "min_degree": 5,
+        "mean_degree": 7.973,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:49.602332+00:00"
+    },
+    "graph_k006": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.017161802376478352,
+        "min_degree": 6,
+        "mean_degree": 9.543,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:49.630431+00:00"
+    },
+    "graph_k007": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.016629893994009666,
+        "min_degree": 7,
+        "mean_degree": 11.119,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:49.662431+00:00"
+    },
+    "graph_k008": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.0164839232616775,
+        "min_degree": 8,
+        "mean_degree": 12.704,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:49.698431+00:00"
+    },
+    "graph_k009": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.015403706249651272,
+        "min_degree": 9,
+        "mean_degree": 14.279,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:49.738434+00:00"
+    },
+    "graph_k010": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.015305333388538265,
+        "min_degree": 10,
+        "mean_degree": 15.814,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:49.783431+00:00"
+    },
+    "graph_k011": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.015114306786866065,
+        "min_degree": 11,
+        "mean_degree": 17.353,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:49.832430+00:00"
+    },
+    "graph_k012": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.014901307456913471,
+        "min_degree": 12,
+        "mean_degree": 18.887,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:49.886430+00:00"
+    },
+    "graph_k013": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.014687172800209328,
+        "min_degree": 13,
+        "mean_degree": 20.417,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:49.944433+00:00"
+    },
+    "graph_k014": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.014336847076514071,
+        "min_degree": 14,
+        "mean_degree": 21.925,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:50.005488+00:00"
+    },
+    "graph_k015": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.01427227183582794,
+        "min_degree": 15,
+        "mean_degree": 23.459,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:50.070434+00:00"
+    },
+    "graph_k016": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.012935774094689547,
+        "min_degree": 16,
+        "mean_degree": 25.0,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:50.142432+00:00"
+    },
+    "graph_k017": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.012113173630244832,
+        "min_degree": 17,
+        "mean_degree": 26.522,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:50.222434+00:00"
+    },
+    "graph_k018": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.011598844251188702,
+        "min_degree": 18,
+        "mean_degree": 28.027,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:50.299434+00:00"
+    },
+    "graph_k019": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.010675496594007372,
+        "min_degree": 19,
+        "mean_degree": 29.562,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:50.379358+00:00"
+    },
+    "graph_k020": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.010287602948255852,
+        "min_degree": 20,
+        "mean_degree": 31.092,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:50.463894+00:00"
+    },
+    "graph_k021": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.010095586702352773,
+        "min_degree": 21,
+        "mean_degree": 32.604,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:50.552913+00:00"
+    },
+    "graph_k022": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.009711968431970188,
+        "min_degree": 22,
+        "mean_degree": 34.124,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:50.648925+00:00"
+    },
+    "graph_k023": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.009588369550551515,
+        "min_degree": 23,
+        "mean_degree": 35.642,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:50.747926+00:00"
+    },
+    "graph_k024": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.009577433823206884,
+        "min_degree": 24,
+        "mean_degree": 37.131,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:50.849925+00:00"
+    },
+    "graph_k025": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.009283317092077163,
+        "min_degree": 25,
+        "mean_degree": 38.627,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:50.952977+00:00"
+    },
+    "graph_k026": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.008880927514124469,
+        "min_degree": 26,
+        "mean_degree": 40.128,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:51.062925+00:00"
+    },
+    "graph_k027": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.008819134081508341,
+        "min_degree": 27,
+        "mean_degree": 41.641,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:51.175981+00:00"
+    },
+    "graph_k028": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.008685204471497848,
+        "min_degree": 28,
+        "mean_degree": 43.177,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:51.294925+00:00"
+    },
+    "graph_k029": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.008591738547718305,
+        "min_degree": 29,
+        "mean_degree": 44.681,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:51.422431+00:00"
+    },
+    "graph_k030": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.0082400287128808,
+        "min_degree": 30,
+        "mean_degree": 46.162,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:51.548923+00:00"
+    },
+    "graph_k031": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.008239948202691305,
+        "min_degree": 31,
+        "mean_degree": 47.689,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:51.677938+00:00"
+    },
+    "graph_k032": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.007972834044318975,
+        "min_degree": 32,
+        "mean_degree": 49.213,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:51.811938+00:00"
+    },
+    "graph_k033": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.007958306891545208,
+        "min_degree": 33,
+        "mean_degree": 50.703,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:51.949938+00:00"
+    },
+    "graph_k034": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.0077726228564399666,
+        "min_degree": 34,
+        "mean_degree": 52.211,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:52.094225+00:00"
+    },
+    "graph_k035": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.007320985600181004,
+        "min_degree": 35,
+        "mean_degree": 53.735,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:52.239224+00:00"
+    },
+    "graph_k036": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.007277608932065628,
+        "min_degree": 36,
+        "mean_degree": 55.219,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:52.389731+00:00"
+    },
+    "graph_k037": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.006973084771922242,
+        "min_degree": 37,
+        "mean_degree": 56.726,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:52.541731+00:00"
+    },
+    "graph_k038": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.00692161498147109,
+        "min_degree": 38,
+        "mean_degree": 58.204,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:52.696239+00:00"
+    },
+    "graph_k039": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.006529636989842878,
+        "min_degree": 39,
+        "mean_degree": 59.714,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:52.856239+00:00"
+    },
+    "graph_k040": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.006434634283879052,
+        "min_degree": 40,
+        "mean_degree": 61.248,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:53.021865+00:00"
+    },
+    "graph_k041": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.006341047515075744,
+        "min_degree": 41,
+        "mean_degree": 62.739,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:53.189644+00:00"
+    },
+    "graph_k042": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.00633723795242434,
+        "min_degree": 42,
+        "mean_degree": 64.233,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:53.364121+00:00"
+    },
+    "graph_k043": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.006283865493796139,
+        "min_degree": 43,
+        "mean_degree": 65.697,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:53.540120+00:00"
+    },
+    "graph_k044": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.006240341996489544,
+        "min_degree": 44,
+        "mean_degree": 67.18,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:53.727159+00:00"
+    },
+    "graph_k045": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.006119682764241024,
+        "min_degree": 45,
+        "mean_degree": 68.69,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:53.905159+00:00"
+    },
+    "graph_k046": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.00610271372791065,
+        "min_degree": 46,
+        "mean_degree": 70.2,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:54.087159+00:00"
+    },
+    "graph_k047": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.005939815618480838,
+        "min_degree": 47,
+        "mean_degree": 71.706,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:54.277161+00:00"
+    },
+    "graph_k048": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.005734974654779969,
+        "min_degree": 48,
+        "mean_degree": 73.189,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:54.468308+00:00"
+    },
+    "graph_k049": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.005631682408393853,
+        "min_degree": 49,
+        "mean_degree": 74.693,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:54.663749+00:00"
+    },
+    "graph_k050": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.005563854015007832,
+        "min_degree": 50,
+        "mean_degree": 76.194,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:54.878505+00:00"
+    },
+    "graph_k051": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.0055619328905324086,
+        "min_degree": 51,
+        "mean_degree": 77.691,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:55.079505+00:00"
+    },
+    "graph_k052": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.005450945916572797,
+        "min_degree": 52,
+        "mean_degree": 79.169,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:55.284505+00:00"
+    },
+    "graph_k053": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.005361858978056825,
+        "min_degree": 53,
+        "mean_degree": 80.653,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:55.494400+00:00"
+    },
+    "graph_k054": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.005342758344792016,
+        "min_degree": 54,
+        "mean_degree": 82.148,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:55.711878+00:00"
+    },
+    "graph_k055": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.005272452695584517,
+        "min_degree": 55,
+        "mean_degree": 83.627,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:55.942877+00:00"
+    },
+    "graph_k056": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.005195367559532357,
+        "min_degree": 56,
+        "mean_degree": 85.112,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:56.165877+00:00"
+    },
+    "graph_k057": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.005155376595490158,
+        "min_degree": 57,
+        "mean_degree": 86.58,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:56.390680+00:00"
+    },
+    "graph_k058": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.005129592756912441,
+        "min_degree": 58,
+        "mean_degree": 88.055,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:56.635708+00:00"
+    },
+    "graph_k059": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.005036565387434365,
+        "min_degree": 59,
+        "mean_degree": 89.517,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:56.869510+00:00"
+    },
+    "graph_k060": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.004966070809271957,
+        "min_degree": 60,
+        "mean_degree": 90.993,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:57.106509+00:00"
+    },
+    "graph_k061": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.004942620553615734,
+        "min_degree": 61,
+        "mean_degree": 92.488,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:57.347191+00:00"
+    },
+    "graph_k062": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.004837091233922094,
+        "min_degree": 62,
+        "mean_degree": 93.958,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:57.590138+00:00"
+    },
+    "graph_k063": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.004781117590729945,
+        "min_degree": 63,
+        "mean_degree": 95.392,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:57.833028+00:00"
+    },
+    "graph_k064": {
+      "passed": true,
+      "actual": {
+        "symmetry_error": 0.0,
+        "diagonal_nonzero": 0,
+        "min_weight": 0.004766833195430271,
+        "min_degree": 64,
+        "mean_degree": 96.867,
+        "lost_edges": 0,
+        "n_components": 1,
+        "largest_component_size": 2000
+      },
+      "tolerance": {
+        "symmetry": 1e-12
+      },
+      "time_utc": "2026-09-23T23:45:58.080976+00:00"
+    },
+    "artifact_node_alignment": {
+      "passed": true,
+      "actual": {
+        "node_order_hash": "daff48878747e04fd33484b4ff404a2b5bc60d6f4e55b851787c7202acd72b65",
+        "n_nodes": 2000
+      },
+      "tolerance": null,
+      "time_utc": "2026-09-23T23:46:01.124907+00:00"
+    }
+  },
+  "commands": [
+    {
+      "command": "python -m jamendo_exp audit --config configs/main.json",
+      "cwd": "E:\\Codex\\2026-09-22\\group-project-mtg-jamendo\\work\\experiment",
+      "started_utc": "2026-09-23T23:44:59.400845+00:00",
+      "status": "passed",
+      "completed_utc": "2026-09-23T23:45:22.497105+00:00"
+    },
+    {
+      "command": "python -m jamendo_exp build --config configs/main.json",
+      "cwd": "E:\\Codex\\2026-09-22\\group-project-mtg-jamendo\\work\\experiment",
+      "started_utc": "2026-09-23T23:45:42.382333+00:00",
+      "status": "passed",
+      "completed_utc": "2026-09-23T23:46:01.124907+00:00"
+    }
+  ],
+  "config": {
+    "seed": 521,
+    "expected_nodes": 2000,
+    "pca_dimensions": 32,
+    "dtype": "float64",
+    "standardization_ddof": 0,
+    "constant_threshold": 1e-12,
+    "variance_tolerance": 1e-10,
+    "rank_relative_threshold": 1e-10,
+    "group_ranges": {
+      "timbre": [
+        0,
+        26
+      ],
+      "pitch": [
+        26,
+        98
+      ],
+      "rhythm": [
+        98,
+        100
+      ]
+    },
+    "group_weighting": "inverse_sqrt_retained_dimensions",
+    "pca_solver": "full",
+    "pca_whiten": false,
+    "distance": "euclidean",
+    "kernel": "gaussian",
+    "bandwidth_neighbor": 10,
+    "k_min": 2,
+    "k_max": 64,
+    "symmetrization": "union",
+    "neighbor_tie_break": "node_index",
+    "component_order": "size_desc_min_index_asc",
+    "data_dir": "E:\\Codex\\2026-09-22\\group-project-mtg-jamendo\\outputs\\MTG-Jamendo-Experiment",
+    "output_root": "E:\\Codex\\2026-09-22\\group-project-mtg-jamendo\\outputs\\experiment-runs",
+    "run_id": "main_d32_seed521"
+  },
+  "connectivity_summary": {
+    "k_c": 3,
+    "graph_count": 63,
+    "first": {
+      "k": 2,
+      "n_nodes": 2000,
+      "n_edges": 3311,
+      "n_components": 2,
+      "largest_component_size": 1997,
+      "largest_component_fraction": 0.9985
+    },
+    "last": {
+      "k": 64,
+      "n_nodes": 2000,
+      "n_edges": 96867,
+      "n_components": 1,
+      "largest_component_size": 2000,
+      "largest_component_fraction": 1.0
+    }
+  },
+  "environment": {
+    "python": "3.11.7 | packaged by Anaconda, Inc. | (main, Dec 15 2023, 18:05:47) [MSC v.1916 64 bit (AMD64)]",
+    "executable": "D:\\Anaconda\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "time_utc": "2026-09-23T23:44:59.394845+00:00",
+    "implementation_hashes": {
+      "__init__.py": "2d5ce1a4f702a4005ee7b011402710016e8c341590d9af6f169db4557d97ba1c",
+      "__main__.py": "37546b15f36b512a5d94f987b6bcf256e8bfbcaa6a445b99f990a5ec975b04c6",
+      "audit.py": "71368241870202eba2852487e7417531b27501baa06c3d529ef83fc927f0dfb4",
+      "common.py": "c055982d77985b5a398768e69d055af395f79d946334ac2a2588903497a2a15a",
+      "connectivity.py": "f16faa9dcc4d97a9c5ecf7c0bf7bbfe0ee3ffd54fea2ecc51418d46a8d951752",
+      "features.py": "7cc0d537b6889977b4ef42d569913811bb9b140953093c9fc758c89104dde95b",
+      "graph.py": "fe6a3859f17d124869fc4ecf17a3e4511ba7f5a537029e2bed6433eeabbc0d8e"
+    },
+    "dependencies": {
+      "numpy": "1.26.4",
+      "scipy": "1.11.4",
+      "scikit-learn": "1.2.2",
+      "matplotlib": "3.8.0"
+    }
+  },
+  "interaction": {
+    "sigma": 1.2439228474629322,
+    "bandwidth_neighbor": 10,
+    "zero_distance_pairs": 3,
+    "gaussian_underflow_directed_entries": 0,
+    "bandwidth_rule": "median kth non-self neighbor distance",
+    "fallback": [],
+    "distance_formula": "R[i,j] = ||f_i-f_j||_2",
+    "similarity_formula": "W[i,j] = exp(-R[i,j]^2/(2*sigma^2)) for i!=j; W[i,i]=0"
+  },
+  "preprocessing": {
+    "raw_dimensions": 100,
+    "retained_dimensions": 100,
+    "pca_dimensions": 32,
+    "numerical_rank": 100,
+    "groups": {
+      "timbre": {
+        "retained_dimensions": 26,
+        "missing": false,
+        "weight": 0.19611613513818404
+      },
+      "pitch": {
+        "retained_dimensions": 72,
+        "missing": false,
+        "weight": 0.11785113019775793
+      },
+      "rhythm": {
+        "retained_dimensions": 2,
+        "missing": false,
+        "weight": 0.7071067811865475
+      }
+    },
+    "removed_features": [],
+    "cumulative_explained_variance": 0.9441594700416137,
+    "ddof": 0,
+    "whiten": false,
+    "solver": "full",
+    "transform": "(((X[:, keep_mask]-mean[keep_mask])/std[keep_mask])*group_weights-pca_mean) @ pca_components.T"
+  },
+  "run_identity": {
+    "config": {
+      "seed": 521,
+      "expected_nodes": 2000,
+      "pca_dimensions": 32,
+      "dtype": "float64",
+      "standardization_ddof": 0,
+      "constant_threshold": 1e-12,
+      "variance_tolerance": 1e-10,
+      "rank_relative_threshold": 1e-10,
+      "group_ranges": {
+        "timbre": [
+          0,
+          26
+        ],
+        "pitch": [
+          26,
+          98
+        ],
+        "rhythm": [
+          98,
+          100
+        ]
+      },
+      "group_weighting": "inverse_sqrt_retained_dimensions",
+      "pca_solver": "full",
+      "pca_whiten": false,
+      "distance": "euclidean",
+      "kernel": "gaussian",
+      "bandwidth_neighbor": 10,
+      "k_min": 2,
+      "k_max": 64,
+      "symmetrization": "union",
+      "neighbor_tie_break": "node_index",
+      "component_order": "size_desc_min_index_asc",
+      "data_dir": "E:\\Codex\\2026-09-22\\group-project-mtg-jamendo\\outputs\\MTG-Jamendo-Experiment",
+      "output_root": "E:\\Codex\\2026-09-22\\group-project-mtg-jamendo\\outputs\\experiment-runs",
+      "run_id": "main_d32_seed521"
+    },
+    "inputs": {
+      "manifest.json": "6fb2d6d494fb1b7c8dedb9c8918caf4707ee58c8b47608a535ff23ac07f16aa9",
+      "labels.jsonl": "57fe21c58a2387bd5c961a2749e453234956d8304dd7a27a5b166a3833da7fe3",
+      "tracks.tsv": "ace3dcdf31087e803b5dfefc47a0bb178da595f30b131a3e997ff95ce164ac44"
+    },
+    "implementation": {
+      "__init__.py": "2d5ce1a4f702a4005ee7b011402710016e8c341590d9af6f169db4557d97ba1c",
+      "__main__.py": "37546b15f36b512a5d94f987b6bcf256e8bfbcaa6a445b99f990a5ec975b04c6",
+      "audit.py": "71368241870202eba2852487e7417531b27501baa06c3d529ef83fc927f0dfb4",
+      "common.py": "c055982d77985b5a398768e69d055af395f79d946334ac2a2588903497a2a15a",
+      "connectivity.py": "f16faa9dcc4d97a9c5ecf7c0bf7bbfe0ee3ffd54fea2ecc51418d46a8d951752",
+      "features.py": "7cc0d537b6889977b4ef42d569913811bb9b140953093c9fc758c89104dde95b",
+      "graph.py": "fe6a3859f17d124869fc4ecf17a3e4511ba7f5a537029e2bed6433eeabbc0d8e"
+    }
+  },
+  "stages": {
+    "A1": {
+      "artifacts": {
+        "features_raw.npy": "ab33df0a25bd5e06a8152ade226ad37f8bed3c33007e27bf671c99714cb40a42",
+        "features.npy": "e84132573e970e64c1ed13ef25cb54d7a2e071f7796721a81e56a88ab495d63e",
+        "feature_names.json": "bf200bc8012d0399e048e3708d1deca0dc29b994dbf33ecc24173023729a557b",
+        "preprocessing.npz": "7a0bcadc5ccaf38384aab6ee6514e0b521b767296d9b172c9f2022d1070cfd7d",
+        "preprocessing.json": "9d3bbc66f47d64c3b8ed31f643f02f50da7460ef2cc60827c2cf282d9e2958ae",
+        "pca_variance.csv": "1865d224ce2a9287a72c2bdea4f509fe645d654100fa8f215f11ddee5b45fa7b"
+      },
+      "summary": {
+        "raw_dimensions": 100,
+        "retained_dimensions": 100,
+        "pca_dimensions": 32,
+        "numerical_rank": 100,
+        "groups": {
+          "timbre": {
+            "retained_dimensions": 26,
+            "missing": false,
+            "weight": 0.19611613513818404
+          },
+          "pitch": {
+            "retained_dimensions": 72,
+            "missing": false,
+            "weight": 0.11785113019775793
+          },
+          "rhythm": {
+            "retained_dimensions": 2,
+            "missing": false,
+            "weight": 0.7071067811865475
+          }
+        },
+        "removed_features": [],
+        "cumulative_explained_variance": 0.9441594700416137,
+        "ddof": 0,
+        "whiten": false,
+        "solver": "full",
+        "transform": "(((X[:, keep_mask]-mean[keep_mask])/std[keep_mask])*group_weights-pca_mean) @ pca_components.T"
+      },
+      "deviations": [],
+      "completed_utc": "2026-09-23T23:45:48.557104+00:00"
+    },
+    "A2": {
+      "artifacts": {
+        "distances.npy": "f26bb8e484a6b48e734986354435db022513c12886b8b7fa6d0d5c8f1a4c46a3",
+        "similarities.npy": "e0f201e6305612718658f0d0ff760669fb112cb85bbb6968c78775e93be6015b",
+        "neighbors.npy": "285bc8c5551ebc1b658395d83e6634dee1ea24ae9e4a3c5c74b446444e07d4d7",
+        "interaction.json": "7017f37690a826856914f4f22dfefe5704e66a581e5fdbf170f2ccfeb58d4c41"
+      },
+      "summary": {
+        "sigma": 1.2439228474629322,
+        "bandwidth_neighbor": 10,
+        "zero_distance_pairs": 3,
+        "gaussian_underflow_directed_entries": 0,
+        "bandwidth_rule": "median kth non-self neighbor distance",
+        "fallback": [],
+        "distance_formula": "R[i,j] = ||f_i-f_j||_2",
+        "similarity_formula": "W[i,j] = exp(-R[i,j]^2/(2*sigma^2)) for i!=j; W[i,i]=0"
+      },
+      "deviations": [],
+      "completed_utc": "2026-09-23T23:45:49.519323+00:00"
+    },
+    "A3": {
+      "artifacts": {
+        "graphs/k002.npz": "2b19ea6a998117b7225907f1f2d40614b541d11af8a7598b3575366152b2a820",
+        "graphs/k003.npz": "d3e1adfc6a5b742c15fbdc2c038c19572db937fa758a1be217254a8d7d4d28a6",
+        "graphs/k004.npz": "b6e48291f684684ee5de12a6ab27579f5c2981855ed9a962b946e224d0b92baa",
+        "graphs/k005.npz": "a2b1183f36e3fef12d9a5991da639e08042ebd4adfeefdebb65553ac54323de5",
+        "graphs/k006.npz": "6d20e7deb8d3915f50584db40837055b95c060e43f6eff9ec4236ac3a9fef09d",
+        "graphs/k007.npz": "e307739f881363f5de9d06c207357389212f38f0dd4317ec7cda2e8c3e35f90e",
+        "graphs/k008.npz": "3994cc9b3b644adb02b993c68c70f0a1e63a0ad08e3501f49942ce794bc7def1",
+        "graphs/k009.npz": "4b6832e4060f3d100084258701e13daa0b1af33c4b03e763eb026ec4d5abfbd5",
+        "graphs/k010.npz": "e6826f9a0182e4e191ac19c9da3d00a6e8fadbefcd5fe4cc361ddbb90436c560",
+        "graphs/k011.npz": "e9d0c3cdca0d19bcb29903f24ce2bc08df904cce85f7b80bc9f4f033da8b2936",
+        "graphs/k012.npz": "83a56eb1adb30341c9a9dca9e944451d475a798fe97fa97fed9d1a73c955b959",
+        "graphs/k013.npz": "3ad39f02cae1aa421b83f5cc2202f292f348ed4e4a8bf00fb837aaa26a44211f",
+        "graphs/k014.npz": "213d07b0a6609ac8ce638a157a8200f6214d54c31080cbee49be0af8d422cc67",
+        "graphs/k015.npz": "12e915c36bc3064cfe46c084774bf10e5dc1b8dc0c4c09598025b36c1e4493e6",
+        "graphs/k016.npz": "40b61c86ccb7e58388c70ee3ebf97de40a29cea66305447dfcd7e684b2b034fa",
+        "graphs/k017.npz": "07570ceccb2a99322a3f5c617d43d4eadbd6d9d35b362ce8e4583d12234c103b",
+        "graphs/k018.npz": "9b488a021d666e8484c324e74ca2641985855c77b18123973014a01efea05a73",
+        "graphs/k019.npz": "4089b6193dc38d2bb3e8b7ce37aafd271390841b931761cfc88c4e731bce4d5a",
+        "graphs/k020.npz": "4baaf9e9c0b4a10e744cfa3bdf754490c89d5313a8efb17ba1d3bce565b15732",
+        "graphs/k021.npz": "ed535bee1f698b3cdf79293e690a1127581bc57efa210086c5e3c37920e2301b",
+        "graphs/k022.npz": "3dfb49f1e20101089c8b40bc55c3f6a805507201e7befd8de4bfdeb92bdd38d3",
+        "graphs/k023.npz": "21bc33ddf52502a11de427f9cb96d2a1b2fd01e53948083f3203dfba2e0ef5af",
+        "graphs/k024.npz": "006b28c4837907a7f3fdbf00bce8932bba77d4318a94df02c372e7a7fc146f65",
+        "graphs/k025.npz": "76ebd929abe0acfb91557a0172e63507da65dea86e2d8d9595f65e17818abe9a",
+        "graphs/k026.npz": "beecb7d34fdb0f0366925042142b4e6b76496b69a3f3582d9e55eed233a6b8f8",
+        "graphs/k027.npz": "495dc6a797bf80660b475f0c6faade816eb4d744dafdbfd31ee2322b3c925f23",
+        "graphs/k028.npz": "3f34c8023a62d86c668eb632bee32486893af69c59f92b77ff793803a01cf23a",
+        "graphs/k029.npz": "b7c454ea8cf3b465703b2cfd28fbb06d9da6951f9effa3c68071469b641b0b1e",
+        "graphs/k030.npz": "88a3226e378269a78f23c9f8d2ee99cd282e6d184c61d54178dc8b32bc856233",
+        "graphs/k031.npz": "b4fc23821e2fee31bea44c8e1cbf38b6ceac8fbafb0875195a799cdf88cf78ce",
+        "graphs/k032.npz": "4b73d93c776e0757e9b940219758edca58613494b4b8c902c6062171b1d1f588",
+        "graphs/k033.npz": "96d7acf6bb9b9f29dd73370d2f2a60aaf25c77b74f6b4e95bb384ce9ed54a579",
+        "graphs/k034.npz": "e0b91ee16a0da14e6ba353a15ce5150d1e5222c0f684f9f2d95f5ba5bc156c62",
+        "graphs/k035.npz": "71aa09b0d18c552aaca1bbd6db6042c688e04c14fd751de2b989b12f718bc194",
+        "graphs/k036.npz": "2b95187cfc203bdb8348858e884fc5974cf93984bb88a5eb55918f1594f2f451",
+        "graphs/k037.npz": "87b4b67eb5c3706a281c1e23a135c41007efa25662138474124d89b046d5800f",
+        "graphs/k038.npz": "c5105b0a88896cbc106db3b489954ca8d2b9ea2a3732df3cefb552e105431bba",
+        "graphs/k039.npz": "883799eb42b31db4082116c708ec7fda7a05bac969be3528b537a58bb08855c7",
+        "graphs/k040.npz": "b73a43d0d36cb2a7238901e2fb92019db411b205532f47e3432ed7d0338f1ba3",
+        "graphs/k041.npz": "0ab4cd213d0f24561b6423e235ca0b5dbcb52f4e5a00a44fc93a62a01181707c",
+        "graphs/k042.npz": "05d86ba2aa55134347c236b82051a9790dcc0fe2cddca8df279c06f013ea4cc1",
+        "graphs/k043.npz": "ffe415b8446fdfed9e5e70b35cacacc3bbd5c899094a7c25f0c826d3e70a0d68",
+        "graphs/k044.npz": "c34f8985aa6df2d84961ebe50675603cd1274cac62f8c462f5dfc81fc3895f48",
+        "graphs/k045.npz": "f07d3dfaf0338433cc6c807477acfedb14f658fb24e26cb625e8baf8ea6022f6",
+        "graphs/k046.npz": "fa75e5daada845b41c16ddd9e0d623538feba35cf592a6c3bd251d84c5ec07ee",
+        "graphs/k047.npz": "2265d7202e5cc03ba90a60951d70ce4e0c4565ec308f703cc4f0df2d7dec15dd",
+        "graphs/k048.npz": "fbcca5b75e2daca51a2672acef0196a3da1db049cdc11550a13f23bf835c2765",
+        "graphs/k049.npz": "fdd28378173e9357fa59c41f7bffad8dfc315b87ed66b8544018d8b6ddf46d19",
+        "graphs/k050.npz": "ccdaadaf7825689643a12eade6d04ef33c96eef6662f962caa13727776f054e9",
+        "graphs/k051.npz": "b09557d2197ed66fa5a51eba7feebc0a8a39f07619a78c5abc67f9b32d9ee1e3",
+        "graphs/k052.npz": "def3a90d1c72f18f85373bd786ee542403afbd77646e0920cf967e56d313d6d7",
+        "graphs/k053.npz": "c1a29fdc73b9e0759b657a1b1e05a780f2199f4214c58bf5467d0bcb8e5664b2",
+        "graphs/k054.npz": "5ad42c1c56b74484cee302adbc710e91d0b74fcd3397853acaa9a137a029332a",
+        "graphs/k055.npz": "5df2dd8bc6c999729140bc254516fc1b0a3113fd9b72fa72bb4b6d8b1cb214e0",
+        "graphs/k056.npz": "00ec1f22391acc105ccdc6d63a35bff0dfd3817cf5e60b33303a77cb464c0df1",
+        "graphs/k057.npz": "d59ae00b6a0c782d3b911b738292195366fe1f21560664580379c702cd5c6c05",
+        "graphs/k058.npz": "f32e7ce56337c1d9d5db8ad72c58b34ab42fec79dcdd5d171979d954f114e994",
+        "graphs/k059.npz": "82912f1bbd0a1c7876e89c7315db3458d789ac316f2cd603b378c03e0a77cf7a",
+        "graphs/k060.npz": "94f2b71ba2a3c93448cecc6a08a96cab1dab16d1add49b24d10c67bfe8e1f1be",
+        "graphs/k061.npz": "c45e2431c973713b1b248d8a1424a428766f99236be7671dbc3037f2937f4bf0",
+        "graphs/k062.npz": "21288a60579548db81133038235304d85af58e33a19191528a8799fcb7158634",
+        "graphs/k063.npz": "cc6d485dc60f1cb3418a1ac3f46224ce4b4b3a1af5f084efe82c660ec9c08228",
+        "graphs/k064.npz": "9f5d5de8df67216d1f6a754f6996fc83851fe014774fde50675f04f0c2563376",
+        "components/k002.npz": "52d5624a017d9b8ad10367cc3a5063fbc5392a87a02589cff436b6f7585b9c95",
+        "components/k003.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k004.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k005.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k006.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k007.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k008.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k009.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k010.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k011.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k012.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k013.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k014.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k015.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k016.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k017.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k018.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k019.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k020.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k021.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k022.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k023.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k024.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k025.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k026.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k027.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k028.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k029.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k030.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k031.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k032.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k033.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k034.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k035.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k036.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k037.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k038.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k039.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k040.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k041.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k042.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k043.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k044.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k045.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k046.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k047.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k048.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k049.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k050.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k051.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k052.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k053.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k054.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k055.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k056.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k057.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k058.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k059.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k060.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k061.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k062.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k063.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "components/k064.npz": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80",
+        "figures/components_vs_k.png": "c52877896f777cc11ff64d9fc97ed5c144e721b164031333cd0e00414a225365",
+        "figures/largest_component_fraction_vs_k.png": "0662189c355efdf7feeff93417f192c2e5e6d9c470dd862e702f1883c31a14d7",
+        "connectivity.csv": "6775e61592b645bf234fac467a036dbcf4828e6a7a0e229e28c8ac454bf593ef",
+        "connectivity_summary.json": "ab282dabbcbd6c0142f2619fd34f1590d587de14478b3a1bdf9fcc59d412bed9"
+      },
+      "summary": {
+        "k_c": 3,
+        "graph_count": 63,
+        "first": {
+          "k": 2,
+          "n_nodes": 2000,
+          "n_edges": 3311,
+          "n_components": 2,
+          "largest_component_size": 1997,
+          "largest_component_fraction": 0.9985
+        },
+        "last": {
+          "k": 64,
+          "n_nodes": 2000,
+          "n_edges": 96867,
+          "n_components": 1,
+          "largest_component_size": 2000,
+          "largest_component_fraction": 1.0
+        }
+      },
+      "deviations": [],
+      "completed_utc": "2026-09-23T23:46:01.120909+00:00"
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "time_utc": "2026-09-23T23:46:21.676530+00:00",
+    "nodes": 2000,
+    "graphs": 63,
+    "artifact_hashes_verified": 150,
+    "k_c": 3,
+    "checks": [
+      "artifact hashes",
+      "node order",
+      "portable preprocessing",
+      "all pairwise distances",
+      "Gaussian formula",
+      "all neighbor tie ordering",
+      "all union supports and edge weights",
+      "canonical component IDs and sizes",
+      "connectivity CSV",
+      "critical k"
+    ],
+    "mathematical_tests": {
+      "run": 8,
+      "failures": 0,
+      "errors": 0
+    },
+    "command": "python validate_run.py --run-dir ../../outputs/experiment-runs/main_d32_seed521"
+  },
+  "original_notes": {
+    "deviations.md": "# Deviations\n\nNone. All A0-A3 baseline conventions were followed.\n",
+    "HANDOFF_A.md": "# Handoff A — A0–A3 completed\n\n## 实际结果\n- 节点：2000；艺术家：673。\n- 特征：100 维 → 100 个有效列 → PCA 32 维。\n- PCA 累计解释方差：94.41594700%。\n- 固定 Gaussian 带宽 sigma：1.243922847462932。\n- 已保存 63 张无向加权 CSR 图；k_c = 3。\n- k 范围两端：{\"k\": 2, \"n_nodes\": 2000, \"n_edges\": 3311, \"n_components\": 2, \"largest_component_size\": 1997, \"largest_component_fraction\": 0.9985}；{\"k\": 64, \"n_nodes\": 2000, \"n_edges\": 96867, \"n_components\": 1, \"largest_component_size\": 2000, \"largest_component_fraction\": 1.0}。\n- 本轮仅完成 A0–A3；队友可直接开始 B1/B2。\n\n## 数据与矩阵接口\nnodes.jsonl 的 node_index 是所有数组的 0-based 行/列索引，按 track_id 升序。\nfeature_names.json 给出 features_raw.npy 的固定列顺序，features.npy 是 PCA 坐标。\nMFCC 使用 13 维 mean 与 sqrt(diag(cov))；HPCP 使用 36 维 mean 与 sqrt(var)；最后是 BPM/onset rate。\n逐列 z-score (ddof=0)，移除 std<=1e-12 的列，三组分别除以其有效维数平方根，然后 full-SVD PCA，whiten=False。\npreprocessing.npz 保存所有可复用的变换参数；preprocessing.json 给出变换公式；pca_variance.csv 包括全部主成分及保留标记。\ndistances.npy: R[i,j]=||f_i-f_j||_2；similarities.npy: W[i,j]=exp(-R[i,j]^2/(2*sigma^2))，对角线均为零。\nsigma 为所有节点第 10 个非自身近邻距离的中位数，在所有 k 上固定；实际替代规则见 interaction.json。\nneighbors.npy 为 (n,64) 整数数组，按 (distance,node_index) 排序，不含自身。\ngraphs/kXXX.npz 保存 A_k=(B_k elementwise W)，B_k 为 k 近邻关系的并集对称化；双向近邻不加倍权重。\ncomponents/kXXX.npz 包含 component_ids 和 component_sizes；分量按规模降序、最小全局索引升序编号。\nconnectivity.csv 包含各 k 的无向边数、分量数与最大分量比例。\n两张连通性曲线位于 figures/。\n\n## 加载示例\n以下代码在运行目录执行（仅使用交付文件，不需要原始声学 JSON）：\n\n```python\nimport json\nimport numpy as np\nfrom scipy.sparse import load_npz\nfrom pathlib import Path\nrun = Path(\".\")\nnodes = [json.loads(s) for s in (run / \"nodes.jsonl\").read_text(encoding=\"utf-8\").splitlines()]\nF = np.load(run / \"features.npy\", allow_pickle=False)\nA = load_npz(run / \"graphs/k032.npz\")\nparts = np.load(run / \"components/k032.npz\", allow_pickle=False)\nindices = np.flatnonzero(parts[\"component_ids\"] == 0)\nA_component = A[indices][:, indices]\ntrack_ids = [nodes[int(i)][\"track_id\"] for i in indices]\n```\n\n## 验证与追溯\n- 全部压缩文件、解压后 JSON 和官方逐曲 SHA-256 对应核验；标签与样本/官方 TSV 对应核验。\n- checks.json 中 77 项检查全部通过（包含每个 k 的对称性、无自环、正边权、度范围、嵌套和连通性单调性）。\n- 节点顺序 hash：daff48878747e04fd33484b4ff404a2b5bc60d6f4e55b851787c7202acd72b65。\n- 输入 manifest SHA-256：6fb2d6d494fb1b7c8dedb9c8918caf4707ee58c8b47608a535ff23ac07f16aa9。\n- artifacts.json 保存交付文件 SHA-256；stages.json 支持相同配置、输入和实现下恢复缺失产物。\n- 原始文件重复组数：0；100 维特征完全重复组数：3。不同 track ID 全部保留。\n- 非对角 Gaussian 下溢项数：0；保留近邻边均为正。\n- 必要偏离见 deviations.md；每列范围、标签覆盖、艺术家计数及提取器版本见 audit.json。\n- 数学与接口回归测试命令、结果见 validation.json（若已生成）。\n\n## 实际成功执行的命令\n- `python -m jamendo_exp audit --config configs/main.json`\n- `python -m jamendo_exp build --config configs/main.json`\n\n## 解释限制\n这是两阶段抽样的探索样本，非全量均匀样本，也非官方训练/测试划分。\nPCA/标准化在整个探索样本上拟合，不能解释为独立测试评估。\n多标签仅用于后续解释；缺失标注不等于阴性；genre 缺失歌曲保留。\n声学统计不能完整表示旋律顺序、和弦进行或曲式；HPCP 通常不具备移调不变性，MFCC 不等于纯音色。\n艺术家与制作条件重复可能影响结构。连通性不证明语义聚类；B/C 的谱、节点域和语义结论尚未计算。\n引用和来源：数据包 source_metadata/CITATION.bib、README.md；固定仓库版本和抽样记录见 audit.json。\n"
+  },
+  "migration": {
+    "files": [
+      {
+        "old": "main_d32_seed521\\connectivity.csv",
+        "new": "results\\connectivity.csv",
+        "sha256": "6775e61592b645bf234fac467a036dbcf4828e6a7a0e229e28c8ac454bf593ef"
+      },
+      {
+        "old": "main_d32_seed521\\distances.npy",
+        "new": "results\\distances.npy",
+        "sha256": "f26bb8e484a6b48e734986354435db022513c12886b8b7fa6d0d5c8f1a4c46a3"
+      },
+      {
+        "old": "main_d32_seed521\\features.npy",
+        "new": "results\\features.npy",
+        "sha256": "e84132573e970e64c1ed13ef25cb54d7a2e071f7796721a81e56a88ab495d63e"
+      },
+      {
+        "old": "main_d32_seed521\\features_raw.npy",
+        "new": "source_data\\features_raw.npy",
+        "sha256": "ab33df0a25bd5e06a8152ade226ad37f8bed3c33007e27bf671c99714cb40a42"
+      },
+      {
+        "old": "main_d32_seed521\\feature_names.json",
+        "new": "source_data\\feature_names.json",
+        "sha256": "bf200bc8012d0399e048e3708d1deca0dc29b994dbf33ecc24173023729a557b"
+      },
+      {
+        "old": "main_d32_seed521\\neighbors.npy",
+        "new": "results\\neighbors.npy",
+        "sha256": "285bc8c5551ebc1b658395d83e6634dee1ea24ae9e4a3c5c74b446444e07d4d7"
+      },
+      {
+        "old": "main_d32_seed521\\nodes.jsonl",
+        "new": "source_data\\nodes.jsonl",
+        "sha256": "f6b53ddc629dbde3946dccdf4c5a940531dd5c3d91229259f9316b45674b60a1"
+      },
+      {
+        "old": "main_d32_seed521\\pca_variance.csv",
+        "new": "results\\pca_variance.csv",
+        "sha256": "1865d224ce2a9287a72c2bdea4f509fe645d654100fa8f215f11ddee5b45fa7b"
+      },
+      {
+        "old": "main_d32_seed521\\preprocessing.npz",
+        "new": "results\\preprocessing.npz",
+        "sha256": "7a0bcadc5ccaf38384aab6ee6514e0b521b767296d9b172c9f2022d1070cfd7d"
+      },
+      {
+        "old": "main_d32_seed521\\similarities.npy",
+        "new": "results\\similarities.npy",
+        "sha256": "e0f201e6305612718658f0d0ff760669fb112cb85bbb6968c78775e93be6015b"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k002.npz",
+        "new": "results\\components\\k002.npz",
+        "sha256": "52d5624a017d9b8ad10367cc3a5063fbc5392a87a02589cff436b6f7585b9c95"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k003.npz",
+        "new": "results\\components\\k003.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k004.npz",
+        "new": "results\\components\\k004.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k005.npz",
+        "new": "results\\components\\k005.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k006.npz",
+        "new": "results\\components\\k006.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k007.npz",
+        "new": "results\\components\\k007.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k008.npz",
+        "new": "results\\components\\k008.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k009.npz",
+        "new": "results\\components\\k009.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k010.npz",
+        "new": "results\\components\\k010.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k011.npz",
+        "new": "results\\components\\k011.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k012.npz",
+        "new": "results\\components\\k012.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k013.npz",
+        "new": "results\\components\\k013.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k014.npz",
+        "new": "results\\components\\k014.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k015.npz",
+        "new": "results\\components\\k015.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k016.npz",
+        "new": "results\\components\\k016.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k017.npz",
+        "new": "results\\components\\k017.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k018.npz",
+        "new": "results\\components\\k018.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k019.npz",
+        "new": "results\\components\\k019.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k020.npz",
+        "new": "results\\components\\k020.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k021.npz",
+        "new": "results\\components\\k021.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k022.npz",
+        "new": "results\\components\\k022.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k023.npz",
+        "new": "results\\components\\k023.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k024.npz",
+        "new": "results\\components\\k024.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k025.npz",
+        "new": "results\\components\\k025.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k026.npz",
+        "new": "results\\components\\k026.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k027.npz",
+        "new": "results\\components\\k027.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k028.npz",
+        "new": "results\\components\\k028.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k029.npz",
+        "new": "results\\components\\k029.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k030.npz",
+        "new": "results\\components\\k030.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k031.npz",
+        "new": "results\\components\\k031.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k032.npz",
+        "new": "results\\components\\k032.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k033.npz",
+        "new": "results\\components\\k033.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k034.npz",
+        "new": "results\\components\\k034.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k035.npz",
+        "new": "results\\components\\k035.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k036.npz",
+        "new": "results\\components\\k036.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k037.npz",
+        "new": "results\\components\\k037.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k038.npz",
+        "new": "results\\components\\k038.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k039.npz",
+        "new": "results\\components\\k039.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k040.npz",
+        "new": "results\\components\\k040.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k041.npz",
+        "new": "results\\components\\k041.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k042.npz",
+        "new": "results\\components\\k042.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k043.npz",
+        "new": "results\\components\\k043.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k044.npz",
+        "new": "results\\components\\k044.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k045.npz",
+        "new": "results\\components\\k045.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k046.npz",
+        "new": "results\\components\\k046.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k047.npz",
+        "new": "results\\components\\k047.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k048.npz",
+        "new": "results\\components\\k048.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k049.npz",
+        "new": "results\\components\\k049.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k050.npz",
+        "new": "results\\components\\k050.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k051.npz",
+        "new": "results\\components\\k051.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k052.npz",
+        "new": "results\\components\\k052.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k053.npz",
+        "new": "results\\components\\k053.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k054.npz",
+        "new": "results\\components\\k054.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k055.npz",
+        "new": "results\\components\\k055.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k056.npz",
+        "new": "results\\components\\k056.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k057.npz",
+        "new": "results\\components\\k057.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k058.npz",
+        "new": "results\\components\\k058.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k059.npz",
+        "new": "results\\components\\k059.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k060.npz",
+        "new": "results\\components\\k060.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k061.npz",
+        "new": "results\\components\\k061.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k062.npz",
+        "new": "results\\components\\k062.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k063.npz",
+        "new": "results\\components\\k063.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\components\\k064.npz",
+        "new": "results\\components\\k064.npz",
+        "sha256": "cae96101808df8a89e8456dab2ef898e10b9ade1ca8e3fa22e672c135c28bc80"
+      },
+      {
+        "old": "main_d32_seed521\\figures\\components_vs_k.png",
+        "new": "results\\figures\\components_vs_k.png",
+        "sha256": "c52877896f777cc11ff64d9fc97ed5c144e721b164031333cd0e00414a225365"
+      },
+      {
+        "old": "main_d32_seed521\\figures\\largest_component_fraction_vs_k.png",
+        "new": "results\\figures\\largest_component_fraction_vs_k.png",
+        "sha256": "0662189c355efdf7feeff93417f192c2e5e6d9c470dd862e702f1883c31a14d7"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k002.npz",
+        "new": "results\\graphs\\k002.npz",
+        "sha256": "2b19ea6a998117b7225907f1f2d40614b541d11af8a7598b3575366152b2a820"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k003.npz",
+        "new": "results\\graphs\\k003.npz",
+        "sha256": "d3e1adfc6a5b742c15fbdc2c038c19572db937fa758a1be217254a8d7d4d28a6"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k004.npz",
+        "new": "results\\graphs\\k004.npz",
+        "sha256": "b6e48291f684684ee5de12a6ab27579f5c2981855ed9a962b946e224d0b92baa"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k005.npz",
+        "new": "results\\graphs\\k005.npz",
+        "sha256": "a2b1183f36e3fef12d9a5991da639e08042ebd4adfeefdebb65553ac54323de5"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k006.npz",
+        "new": "results\\graphs\\k006.npz",
+        "sha256": "6d20e7deb8d3915f50584db40837055b95c060e43f6eff9ec4236ac3a9fef09d"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k007.npz",
+        "new": "results\\graphs\\k007.npz",
+        "sha256": "e307739f881363f5de9d06c207357389212f38f0dd4317ec7cda2e8c3e35f90e"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k008.npz",
+        "new": "results\\graphs\\k008.npz",
+        "sha256": "3994cc9b3b644adb02b993c68c70f0a1e63a0ad08e3501f49942ce794bc7def1"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k009.npz",
+        "new": "results\\graphs\\k009.npz",
+        "sha256": "4b6832e4060f3d100084258701e13daa0b1af33c4b03e763eb026ec4d5abfbd5"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k010.npz",
+        "new": "results\\graphs\\k010.npz",
+        "sha256": "e6826f9a0182e4e191ac19c9da3d00a6e8fadbefcd5fe4cc361ddbb90436c560"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k011.npz",
+        "new": "results\\graphs\\k011.npz",
+        "sha256": "e9d0c3cdca0d19bcb29903f24ce2bc08df904cce85f7b80bc9f4f033da8b2936"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k012.npz",
+        "new": "results\\graphs\\k012.npz",
+        "sha256": "83a56eb1adb30341c9a9dca9e944451d475a798fe97fa97fed9d1a73c955b959"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k013.npz",
+        "new": "results\\graphs\\k013.npz",
+        "sha256": "3ad39f02cae1aa421b83f5cc2202f292f348ed4e4a8bf00fb837aaa26a44211f"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k014.npz",
+        "new": "results\\graphs\\k014.npz",
+        "sha256": "213d07b0a6609ac8ce638a157a8200f6214d54c31080cbee49be0af8d422cc67"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k015.npz",
+        "new": "results\\graphs\\k015.npz",
+        "sha256": "12e915c36bc3064cfe46c084774bf10e5dc1b8dc0c4c09598025b36c1e4493e6"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k016.npz",
+        "new": "results\\graphs\\k016.npz",
+        "sha256": "40b61c86ccb7e58388c70ee3ebf97de40a29cea66305447dfcd7e684b2b034fa"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k017.npz",
+        "new": "results\\graphs\\k017.npz",
+        "sha256": "07570ceccb2a99322a3f5c617d43d4eadbd6d9d35b362ce8e4583d12234c103b"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k018.npz",
+        "new": "results\\graphs\\k018.npz",
+        "sha256": "9b488a021d666e8484c324e74ca2641985855c77b18123973014a01efea05a73"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k019.npz",
+        "new": "results\\graphs\\k019.npz",
+        "sha256": "4089b6193dc38d2bb3e8b7ce37aafd271390841b931761cfc88c4e731bce4d5a"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k020.npz",
+        "new": "results\\graphs\\k020.npz",
+        "sha256": "4baaf9e9c0b4a10e744cfa3bdf754490c89d5313a8efb17ba1d3bce565b15732"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k021.npz",
+        "new": "results\\graphs\\k021.npz",
+        "sha256": "ed535bee1f698b3cdf79293e690a1127581bc57efa210086c5e3c37920e2301b"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k022.npz",
+        "new": "results\\graphs\\k022.npz",
+        "sha256": "3dfb49f1e20101089c8b40bc55c3f6a805507201e7befd8de4bfdeb92bdd38d3"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k023.npz",
+        "new": "results\\graphs\\k023.npz",
+        "sha256": "21bc33ddf52502a11de427f9cb96d2a1b2fd01e53948083f3203dfba2e0ef5af"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k024.npz",
+        "new": "results\\graphs\\k024.npz",
+        "sha256": "006b28c4837907a7f3fdbf00bce8932bba77d4318a94df02c372e7a7fc146f65"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k025.npz",
+        "new": "results\\graphs\\k025.npz",
+        "sha256": "76ebd929abe0acfb91557a0172e63507da65dea86e2d8d9595f65e17818abe9a"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k026.npz",
+        "new": "results\\graphs\\k026.npz",
+        "sha256": "beecb7d34fdb0f0366925042142b4e6b76496b69a3f3582d9e55eed233a6b8f8"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k027.npz",
+        "new": "results\\graphs\\k027.npz",
+        "sha256": "495dc6a797bf80660b475f0c6faade816eb4d744dafdbfd31ee2322b3c925f23"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k028.npz",
+        "new": "results\\graphs\\k028.npz",
+        "sha256": "3f34c8023a62d86c668eb632bee32486893af69c59f92b77ff793803a01cf23a"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k029.npz",
+        "new": "results\\graphs\\k029.npz",
+        "sha256": "b7c454ea8cf3b465703b2cfd28fbb06d9da6951f9effa3c68071469b641b0b1e"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k030.npz",
+        "new": "results\\graphs\\k030.npz",
+        "sha256": "88a3226e378269a78f23c9f8d2ee99cd282e6d184c61d54178dc8b32bc856233"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k031.npz",
+        "new": "results\\graphs\\k031.npz",
+        "sha256": "b4fc23821e2fee31bea44c8e1cbf38b6ceac8fbafb0875195a799cdf88cf78ce"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k032.npz",
+        "new": "results\\graphs\\k032.npz",
+        "sha256": "4b73d93c776e0757e9b940219758edca58613494b4b8c902c6062171b1d1f588"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k033.npz",
+        "new": "results\\graphs\\k033.npz",
+        "sha256": "96d7acf6bb9b9f29dd73370d2f2a60aaf25c77b74f6b4e95bb384ce9ed54a579"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k034.npz",
+        "new": "results\\graphs\\k034.npz",
+        "sha256": "e0b91ee16a0da14e6ba353a15ce5150d1e5222c0f684f9f2d95f5ba5bc156c62"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k035.npz",
+        "new": "results\\graphs\\k035.npz",
+        "sha256": "71aa09b0d18c552aaca1bbd6db6042c688e04c14fd751de2b989b12f718bc194"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k036.npz",
+        "new": "results\\graphs\\k036.npz",
+        "sha256": "2b95187cfc203bdb8348858e884fc5974cf93984bb88a5eb55918f1594f2f451"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k037.npz",
+        "new": "results\\graphs\\k037.npz",
+        "sha256": "87b4b67eb5c3706a281c1e23a135c41007efa25662138474124d89b046d5800f"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k038.npz",
+        "new": "results\\graphs\\k038.npz",
+        "sha256": "c5105b0a88896cbc106db3b489954ca8d2b9ea2a3732df3cefb552e105431bba"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k039.npz",
+        "new": "results\\graphs\\k039.npz",
+        "sha256": "883799eb42b31db4082116c708ec7fda7a05bac969be3528b537a58bb08855c7"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k040.npz",
+        "new": "results\\graphs\\k040.npz",
+        "sha256": "b73a43d0d36cb2a7238901e2fb92019db411b205532f47e3432ed7d0338f1ba3"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k041.npz",
+        "new": "results\\graphs\\k041.npz",
+        "sha256": "0ab4cd213d0f24561b6423e235ca0b5dbcb52f4e5a00a44fc93a62a01181707c"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k042.npz",
+        "new": "results\\graphs\\k042.npz",
+        "sha256": "05d86ba2aa55134347c236b82051a9790dcc0fe2cddca8df279c06f013ea4cc1"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k043.npz",
+        "new": "results\\graphs\\k043.npz",
+        "sha256": "ffe415b8446fdfed9e5e70b35cacacc3bbd5c899094a7c25f0c826d3e70a0d68"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k044.npz",
+        "new": "results\\graphs\\k044.npz",
+        "sha256": "c34f8985aa6df2d84961ebe50675603cd1274cac62f8c462f5dfc81fc3895f48"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k045.npz",
+        "new": "results\\graphs\\k045.npz",
+        "sha256": "f07d3dfaf0338433cc6c807477acfedb14f658fb24e26cb625e8baf8ea6022f6"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k046.npz",
+        "new": "results\\graphs\\k046.npz",
+        "sha256": "fa75e5daada845b41c16ddd9e0d623538feba35cf592a6c3bd251d84c5ec07ee"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k047.npz",
+        "new": "results\\graphs\\k047.npz",
+        "sha256": "2265d7202e5cc03ba90a60951d70ce4e0c4565ec308f703cc4f0df2d7dec15dd"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k048.npz",
+        "new": "results\\graphs\\k048.npz",
+        "sha256": "fbcca5b75e2daca51a2672acef0196a3da1db049cdc11550a13f23bf835c2765"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k049.npz",
+        "new": "results\\graphs\\k049.npz",
+        "sha256": "fdd28378173e9357fa59c41f7bffad8dfc315b87ed66b8544018d8b6ddf46d19"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k050.npz",
+        "new": "results\\graphs\\k050.npz",
+        "sha256": "ccdaadaf7825689643a12eade6d04ef33c96eef6662f962caa13727776f054e9"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k051.npz",
+        "new": "results\\graphs\\k051.npz",
+        "sha256": "b09557d2197ed66fa5a51eba7feebc0a8a39f07619a78c5abc67f9b32d9ee1e3"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k052.npz",
+        "new": "results\\graphs\\k052.npz",
+        "sha256": "def3a90d1c72f18f85373bd786ee542403afbd77646e0920cf967e56d313d6d7"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k053.npz",
+        "new": "results\\graphs\\k053.npz",
+        "sha256": "c1a29fdc73b9e0759b657a1b1e05a780f2199f4214c58bf5467d0bcb8e5664b2"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k054.npz",
+        "new": "results\\graphs\\k054.npz",
+        "sha256": "5ad42c1c56b74484cee302adbc710e91d0b74fcd3397853acaa9a137a029332a"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k055.npz",
+        "new": "results\\graphs\\k055.npz",
+        "sha256": "5df2dd8bc6c999729140bc254516fc1b0a3113fd9b72fa72bb4b6d8b1cb214e0"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k056.npz",
+        "new": "results\\graphs\\k056.npz",
+        "sha256": "00ec1f22391acc105ccdc6d63a35bff0dfd3817cf5e60b33303a77cb464c0df1"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k057.npz",
+        "new": "results\\graphs\\k057.npz",
+        "sha256": "d59ae00b6a0c782d3b911b738292195366fe1f21560664580379c702cd5c6c05"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k058.npz",
+        "new": "results\\graphs\\k058.npz",
+        "sha256": "f32e7ce56337c1d9d5db8ad72c58b34ab42fec79dcdd5d171979d954f114e994"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k059.npz",
+        "new": "results\\graphs\\k059.npz",
+        "sha256": "82912f1bbd0a1c7876e89c7315db3458d789ac316f2cd603b378c03e0a77cf7a"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k060.npz",
+        "new": "results\\graphs\\k060.npz",
+        "sha256": "94f2b71ba2a3c93448cecc6a08a96cab1dab16d1add49b24d10c67bfe8e1f1be"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k061.npz",
+        "new": "results\\graphs\\k061.npz",
+        "sha256": "c45e2431c973713b1b248d8a1424a428766f99236be7671dbc3037f2937f4bf0"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k062.npz",
+        "new": "results\\graphs\\k062.npz",
+        "sha256": "21288a60579548db81133038235304d85af58e33a19191528a8799fcb7158634"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k063.npz",
+        "new": "results\\graphs\\k063.npz",
+        "sha256": "cc6d485dc60f1cb3418a1ac3f46224ce4b4b3a1af5f084efe82c660ec9c08228"
+      },
+      {
+        "old": "main_d32_seed521\\graphs\\k064.npz",
+        "new": "results\\graphs\\k064.npz",
+        "sha256": "9f5d5de8df67216d1f6a754f6996fc83851fe014774fde50675f04f0c2563376"
+      }
+    ],
+    "note": "Historical records below retain original paths; use code/README.md for current paths. Original processing source was not included; process.py is a reconstructed implementation.",
+    "reconstruction_validation": {
+      "_verification_saved": {
+        "features.npy": {
+          "max_absolute_error": 2.7755575615628914e-16
+        },
+        "distances.npy": {
+          "max_absolute_error": 8.881784197001252e-16
+        },
+        "similarities.npy": {
+          "max_absolute_error": 2.7755575615628914e-16
+        },
+        "graphs_verified": 63,
+        "neighbors_components_connectivity": "exact match"
+      },
+      "_verification_refit": {
+        "features.npy": {
+          "max_absolute_error": 3.302913498259841e-14
+        },
+        "distances.npy": {
+          "max_absolute_error": 7.105427357601002e-15
+        },
+        "similarities.npy": {
+          "max_absolute_error": 1.27675647831893e-15
+        },
+        "graphs_verified": 63,
+        "neighbors_components_connectivity": "exact match"
+      }
+    }
+  },
+  "current_pipeline": {
+    "source": "D:/Duke/graph/jamendo-preprocess/jamendo-preprocess/build_graph.py",
+    "entrypoint": "code/build_graph.py",
+    "changes": "Only default --data and --output paths adapted; processing logic unchanged.",
+    "validation": {
+      "source_features_and_nodes": "exact match",
+      "neighbors_and_graph_structure": "exact match",
+      "graphs_verified": 63,
+      "connectivity": "exact match",
+      "pca_max_error_after_sign_alignment": 4.851674617611934e-14
+    },
+    "summary": {
+      "n_nodes": 2000,
+      "artist_count": 673,
+      "raw_dimensions": 100,
+      "retained_dimensions": 100,
+      "requested_pca_dimensions": 32,
+      "pca_dimensions": 32,
+      "cumulative_explained_variance": 0.9441594700416138,
+      "sigma": 1.2439228474629327,
+      "bandwidth_neighbor": 10,
+      "bandwidth_fallback": null,
+      "clipped_variances": 0,
+      "seed": 521,
+      "k_min": 2,
+      "k_max": 64,
+      "k_c": 3,
+      "symmetrization": "union",
+      "weight": "Gaussian similarity, not shortest-path cost"
+    },
+    "pre_deletion_check": {
+      "original_experiment_files_verified": 152,
+      "source_files_verified": 5,
+      "processing_code": "upstream code; only default paths changed",
+      "graphs_rebuilt_and_verified": 63,
+      "external_data_dependencies": false
+    }
+  }
+}

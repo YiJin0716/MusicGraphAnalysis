@@ -1,0 +1,139 @@
+{
+  "k": 2,
+  "weighting": "original Gaussian similarity weights",
+  "laplacian": "I - D^(-1/2) A D^(-1/2); D is weighted degree (strength)",
+  "graph_sha256": "2b19ea6a998117b7225907f1f2d40614b541d11af8a7598b3575366152b2a820",
+  "component_sizes": [
+    1997,
+    3
+  ],
+  "large_component_edges": 3308,
+  "eigenvalues_plotted": 32,
+  "eigenvalues_computed": 33,
+  "selected_index_1_based": 2,
+  "selected_eigenvalue": 0.018169910966933555,
+  "selected_left_gap": 0.018169910966933624,
+  "selected_right_gap": 0.006423772677915933,
+  "selected_min_gap": 0.006423772677915933,
+  "selected_relative_gap": 0.3535390288706539,
+  "selection_rule": "Maximize minimum of left and right adjacent gaps among lambda_2,...,lambda_32",
+  "max_eigenpair_residual": 1.1245188758796136e-15,
+  "orthogonality_max_error": 2.9976021664879227e-15,
+  "embedding_invariance_residual": 8.481355881991046e-16,
+  "nodal_zero_tolerance": 9.375035923595823e-12,
+  "min_abs_selected_eigenvector": 3.787950441118062e-05,
+  "domains": [
+    {
+      "domain": 1,
+      "sign": -1,
+      "nodes": 963,
+      "volume": 1997.167897259118,
+      "mean_bpm": 128.61894999312617,
+      "median_bpm": 126.190879822,
+      "mean_onset_rate": 2.4327916504790754,
+      "artist_count": 399
+    },
+    {
+      "domain": 2,
+      "sign": 1,
+      "nodes": 1034,
+      "volume": 2411.0250400028526,
+      "mean_bpm": 116.87446578005319,
+      "median_bpm": 119.95912933349999,
+      "mean_onset_rate": 4.385158797758385,
+      "artist_count": 439
+    }
+  ],
+  "crossing_edges": 175,
+  "crossing_weight": 114.58880062516957,
+  "normalized_cut": 0.10490265279598131,
+  "k1_components": 288,
+  "connectivity_threshold": 3,
+  "fiedler_at_k3": 0.032153731715255825,
+  "fiedler_at_k64": 0.13746996664019157,
+  "fiedler_decreases": [],
+  "small_component_eigenvalues": [
+    -2.952397857742643e-18,
+    1.4771638839124597,
+    1.5228361160875403
+  ],
+  "top_raw_features": [
+    {
+      "feature": "rhythm.onset_rate",
+      "eta_squared": 0.4496763184864833
+    },
+    {
+      "feature": "mfcc.mean.01",
+      "eta_squared": 0.22640833805118893
+    },
+    {
+      "feature": "mfcc.mean.05",
+      "eta_squared": 0.20156887469778328
+    },
+    {
+      "feature": "mfcc.mean.07",
+      "eta_squared": 0.17018749541116318
+    },
+    {
+      "feature": "mfcc.mean.00",
+      "eta_squared": 0.16453536093232007
+    },
+    {
+      "feature": "mfcc.mean.06",
+      "eta_squared": 0.15735662514462812
+    },
+    {
+      "feature": "mfcc.mean.08",
+      "eta_squared": 0.14042443940072905
+    },
+    {
+      "feature": "mfcc.mean.03",
+      "eta_squared": 0.11837125774347014
+    },
+    {
+      "feature": "hpcp.std.34",
+      "eta_squared": 0.11421051229655499
+    },
+    {
+      "feature": "mfcc.mean.09",
+      "eta_squared": 0.1133181282110615
+    }
+  ],
+  "largest_genre_prevalence_differences": [
+    {
+      "genre": "classical",
+      "domain1_fraction": 0.23156801661474558,
+      "domain2_fraction": 0.035783365570599614
+    },
+    {
+      "genre": "soundtrack",
+      "domain1_fraction": 0.3426791277258567,
+      "domain2_fraction": 0.18181818181818182
+    },
+    {
+      "genre": "electronic",
+      "domain1_fraction": 0.17133956386292834,
+      "domain2_fraction": 0.31721470019342357
+    },
+    {
+      "genre": "ambient",
+      "domain1_fraction": 0.23468328141225336,
+      "domain2_fraction": 0.11411992263056092
+    },
+    {
+      "genre": "orchestral",
+      "domain1_fraction": 0.13811007268951195,
+      "domain2_fraction": 0.04061895551257253
+    },
+    {
+      "genre": "pop",
+      "domain1_fraction": 0.10488058151609553,
+      "domain2_fraction": 0.2011605415860735
+    }
+  ],
+  "versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.16.3",
+    "matplotlib": "3.8.4"
+  }
+}

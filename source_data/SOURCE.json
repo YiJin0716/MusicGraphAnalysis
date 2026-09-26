@@ -1,0 +1,86 @@
+{
+  "dataset": "MTG-Jamendo",
+  "repository": "https://github.com/MTG/mtg-jamendo-dataset",
+  "repository_commit": "cafd8e20c265ed84f1e61f1c875327971f43a62f",
+  "sampling": "Uniformly shuffle 100 official mood/theme feature shards; download first 12; validate eligible tracks; sample 2000 uniformly from those tracks using seed 521. This is a two-stage pilot sample, not a uniform sample of the full dataset.",
+  "sampling_seed": 521,
+  "n_tracks": 2000,
+  "input_format": "gzip JSONL; each record has node and acoustic objects",
+  "changes": "Selected only six original acoustic fields and associated sample node metadata; no standardization, PCA, or numeric rounding applied. No audio included.",
+  "sha256": "376ae8bd04b1976e9b889950c17240b4d37ef9c950f5a34e8c74810b8718b209",
+  "original_manifest_sha256": "6fb2d6d494fb1b7c8dedb9c8918caf4707ee58c8b47608a535ff23ac07f16aa9",
+  "source_archives": [
+    {
+      "url": "https://cdn.freesound.org/mtg-jamendo/autotagging_moodtheme/acousticbrainz/autotagging_moodtheme_acousticbrainz-73.tar.gz",
+      "file": "autotagging_moodtheme_acousticbrainz-73.tar.gz",
+      "bytes": 3756224,
+      "sha256": "f997da5a7a920332186cb11b4cbcbdcd6b590c9f7cc177eaa47e8b80faf78c77"
+    },
+    {
+      "url": "https://cdn.freesound.org/mtg-jamendo/autotagging_moodtheme/acousticbrainz/autotagging_moodtheme_acousticbrainz-79.tar.gz",
+      "file": "autotagging_moodtheme_acousticbrainz-79.tar.gz",
+      "bytes": 4275123,
+      "sha256": "e0894d46253586a69ebe5937e4042f0c2e687efab3a58974c5abeba842acc422"
+    },
+    {
+      "url": "https://cdn.freesound.org/mtg-jamendo/autotagging_moodtheme/acousticbrainz/autotagging_moodtheme_acousticbrainz-26.tar.gz",
+      "file": "autotagging_moodtheme_acousticbrainz-26.tar.gz",
+      "bytes": 4052389,
+      "sha256": "25e93ab9e53c5c63e83de5cba2b0bad902def5bce30e84ef136d315646726a11"
+    },
+    {
+      "url": "https://cdn.freesound.org/mtg-jamendo/autotagging_moodtheme/acousticbrainz/autotagging_moodtheme_acousticbrainz-50.tar.gz",
+      "file": "autotagging_moodtheme_acousticbrainz-50.tar.gz",
+      "bytes": 4223695,
+      "sha256": "acf6f13fe6b1b6ccc609a1ae58a5d23ef94e6277764ddd43486924a45ca7fec3"
+    },
+    {
+      "url": "https://cdn.freesound.org/mtg-jamendo/autotagging_moodtheme/acousticbrainz/autotagging_moodtheme_acousticbrainz-57.tar.gz",
+      "file": "autotagging_moodtheme_acousticbrainz-57.tar.gz",
+      "bytes": 4557477,
+      "sha256": "4c7f1c1836e73adba020931ff43bf7b82b6d1e7acfceeb6931332dd5cf3e5144"
+    },
+    {
+      "url": "https://cdn.freesound.org/mtg-jamendo/autotagging_moodtheme/acousticbrainz/autotagging_moodtheme_acousticbrainz-42.tar.gz",
+      "file": "autotagging_moodtheme_acousticbrainz-42.tar.gz",
+      "bytes": 3973435,
+      "sha256": "3c79858392c413b44868dc93e5f984dfd4935d75c7945d04cd6b5f4a6bd6107b"
+    },
+    {
+      "url": "https://cdn.freesound.org/mtg-jamendo/autotagging_moodtheme/acousticbrainz/autotagging_moodtheme_acousticbrainz-65.tar.gz",
+      "file": "autotagging_moodtheme_acousticbrainz-65.tar.gz",
+      "bytes": 4253099,
+      "sha256": "fcf00129b79afbbc9626c6d4d6ff4f750b6086ee677f2baa4d03f3780b489221"
+    },
+    {
+      "url": "https://cdn.freesound.org/mtg-jamendo/autotagging_moodtheme/acousticbrainz/autotagging_moodtheme_acousticbrainz-59.tar.gz",
+      "file": "autotagging_moodtheme_acousticbrainz-59.tar.gz",
+      "bytes": 4429648,
+      "sha256": "8961d887f1dd394262f06630c14467d080991cfeb0c5b94f537afc8ca6629c54"
+    },
+    {
+      "url": "https://cdn.freesound.org/mtg-jamendo/autotagging_moodtheme/acousticbrainz/autotagging_moodtheme_acousticbrainz-54.tar.gz",
+      "file": "autotagging_moodtheme_acousticbrainz-54.tar.gz",
+      "bytes": 4084849,
+      "sha256": "9a7645a8eea52b9be02982fdcb2f041701c388d69624b4ef3858d070b8738483"
+    },
+    {
+      "url": "https://cdn.freesound.org/mtg-jamendo/autotagging_moodtheme/acousticbrainz/autotagging_moodtheme_acousticbrainz-13.tar.gz",
+      "file": "autotagging_moodtheme_acousticbrainz-13.tar.gz",
+      "bytes": 4373438,
+      "sha256": "193d19ed9c677fbb28a8aa714b5b5832c94149d2759f4170db684f84545f77ce"
+    },
+    {
+      "url": "https://cdn.freesound.org/mtg-jamendo/autotagging_moodtheme/acousticbrainz/autotagging_moodtheme_acousticbrainz-38.tar.gz",
+      "file": "autotagging_moodtheme_acousticbrainz-38.tar.gz",
+      "bytes": 4174602,
+      "sha256": "5c0e48e8cdd8157895c719de745b0ae0d02b45ce147920494584390c57beabb9"
+    },
+    {
+      "url": "https://cdn.freesound.org/mtg-jamendo/autotagging_moodtheme/acousticbrainz/autotagging_moodtheme_acousticbrainz-90.tar.gz",
+      "file": "autotagging_moodtheme_acousticbrainz-90.tar.gz",
+      "bytes": 3741707,
+      "sha256": "6e3c95692dac84174cc010b1e9ffe84b73656c237e8e50645ed99cb3d2fecdf7"
+    }
+  ]
+}

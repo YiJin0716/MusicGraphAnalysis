@@ -1,0 +1,27 @@
+{
+  "pages": 6,
+  "language": "English",
+  "typesetting": "LaTeX article / pdflatex",
+  "included_questions": [
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "E7"
+  ],
+  "figure_count": 6,
+  "pdf_sha256": "763f296cb3a3f17f9f6c0102314b362d0e58cd3191a11591f19a76b7c94207fb",
+  "visual_review": {
+    "pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "renderer": "Poppler pdftoppm at 120 dpi",
+    "result": "All pages inspected; clear axes, readable formulas and tables; no clipping or LaTeX overfull boxes."
+  }
+}

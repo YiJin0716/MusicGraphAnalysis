@@ -1,0 +1,279 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,float}
+\usepackage[hidelinks]{hyperref}
+\graphicspath{{results/report_assets/}}
+\hypersetup{pdftitle={Music Graph Analysis},pdfauthor={}}
+\setlength{\emergencystretch}{1em}
+\title{Music Graph Analysis}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\vspace{-3em}
+
+\section*{E1. Dataset and feature extraction}
+
+The dataset consists of 2,000 tracks by 673 artists from the MTG-Jamendo mood/theme
+subset \cite{jamendo,repository}. The aim is to study acoustic similarity,
+connectivity and spectral groups, and relate those groups to music tags.
+Using seed 521, 12 of 100 shuffled feature archives were selected, and 2,000
+eligible tracks were sampled from those archives. This is a two-stage pilot
+sample, not a uniform sample of the entire collection.
+
+Each track is represented by 100 features from the supplied
+Essentia/AcousticBrainz statistics:
+\begin{center}
+\begin{tabular}{llr}
+\toprule
+Group & Features & Dimension\\
+\midrule
+Timbre & 13 MFCC means and 13 standard deviations & 26\\
+Pitch class & 36 HPCP means and 36 standard deviations & 72\\
+Rhythm & BPM and onset rate & 2\\
+\bottomrule
+\end{tabular}
+\end{center}
+MFCC denotes mel-frequency cepstral coefficients; HPCP denotes harmonic
+pitch-class profile. Standard deviations are the square roots of the MFCC
+covariance diagonal and HPCP variances.
+
+All features are standardized using population standard deviations. A group of
+size $m_g$ is scaled by $1/\sqrt{m_g}$, giving each group equal total variance
+before PCA. With $\mu_j$ and $s_j$ denoting feature means and standard deviations,
+\[
+ \widetilde{x}_{ij}=\frac{x_{ij}-\mu_j}{s_j\sqrt{m_{g(j)}}},
+ \qquad f_i=(\widetilde{x}_i-\overline{\widetilde{x}})V_{32}.
+\]
+Full-SVD PCA retains 32 components without whitening, preserving 94.42\% of the
+group-weighted variance. The retained dimension is a hyperparameter.
+Genre and other tags are excluded from the feature vectors.
+
+\section*{E2. Pairwise interaction matrix}
+
+For the PCA features $f_i\in\mathbb{R}^{32}$, define Euclidean distances and Gaussian
+similarities by
+\[
+ R_{ij}=\lVert f_i-f_j\rVert_2,\qquad
+ W_{ij}=\exp\!\left(-\frac{R_{ij}^2}{2\sigma^2}\right)\ (i\ne j),
+ \qquad W_{ii}=0.
+\]
+The bandwidth $\sigma=1.24392285$ is the median tenth-nearest-neighbor distance,
+held fixed for all graphs. The matrices are symmetric and $2000\times2000$,
+covering 1,999,000 unordered pairs. The median distance is 2.253910 and the median
+off-diagonal similarity is 0.193678. Larger weights indicate greater acoustic
+similarity. Three distinct track pairs have identical feature vectors and
+similarity one; their track identifiers remain separate.
+
+\section*{E3. kNN graphs and connected components}
+
+For every integer $k=2,\ldots,64$, let $N_k(i)$ contain the $k$ nearest non-self
+neighbors of vertex $i$. Distance ties are resolved by node index. The weighted,
+undirected union-kNN adjacency is
+\[
+ A^{(k)}_{ij}=W_{ij}\,
+ \mathbf{1}\{j\in N_k(i)\ \text{or}\ i\in N_k(j)\},
+ \qquad A^{(k)}_{ii}=0.
+\]
+Thus an edge is kept if either endpoint selects the other; a vertex's degree may
+exceed $k$. Because the Gaussian kernel preserves distance ordering, this is
+equivalent to retaining the largest non-self similarities before symmetrization.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.92\linewidth]{latex_connectivity.pdf}
+\caption{Connected-component count for all $k=2,\ldots,64$.}
+\label{fig:connectivity}
+\end{figure}
+
+At $k=2$, the graph has 3,311 edges and components of sizes 1,997 and 3.
+All graphs with $k\ge3$ are connected, so the minimum connectivity threshold is
+$k_c=3$. Fixed neighbor ordering gives nested edge sets as $k$ increases.
+The 1,997-vertex component, containing 99.85\% of the sample, is the large
+component analyzed in E4 and E5.
+
+\section*{E4. Degree and local clustering distributions}
+
+Combinatorial statistics use the binary topology $B_{ij}=\mathbf{1}\{A_{ij}>0\}$.
+For degree $d_i$ and the number $T_i$ of triangles incident on vertex $i$,
+\[
+ d_i=\sum_jB_{ij},\qquad C_i=\frac{2T_i}{d_i(d_i-1)}.
+\]
+Every vertex has degree at least two, so all denominators are nonzero.
+Figure~\ref{fig:distributions} shows the empirical probability masses.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{latex_distributions.pdf}
+\caption{Degree and local clustering distributions of the large $k=2$ component.
+Clustering values are grouped by their exact rational values.}
+\label{fig:distributions}
+\end{figure}
+
+\begin{center}
+\begin{tabular}{lr@{\qquad}lr}
+\toprule
+Statistic & Value & Statistic & Value\\
+\midrule
+Vertices / edges & 1,997 / 3,308 & Mean $C_i$ & 0.140104\\
+Degree range & 2--19 & Median $C_i$ & 0\\
+Mean / median degree & 3.312969 / 3 & Fraction with $C_i=0$ & 65.20\%\\
+Degree mode & 2 & Fraction with $C_i=1$ & 8.26\%\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The degree distribution is discrete and right-skewed, with a dominant mode at
+2: 44.32\% of vertices have degree 2 and 81.97\% have degree at most 4.
+The observed tail alone does not establish a power law or other parametric family.
+The clustering distribution has a large point mass at zero and several
+rational-valued spikes. Such spikes are natural at low degrees: when $d_i=2$,
+only $C_i=0$ and $C_i=1$ are possible.
+The three-vertex component is a triangle, whose degree and clustering
+distributions are point masses at 2 and 1, respectively.
+
+\section*{E5. Laplacian spectral analysis}
+
+\subsection*{Normalized Laplacian and the Fiedler value}
+
+Spectral analysis uses the original Gaussian weights. Let
+$D_{ii}=\sum_j A_{ij}$ be weighted degree (strength). The symmetric normalized
+Laplacian is
+\[
+ \widehat L=I-D^{-1/2}AD^{-1/2}.
+\]
+Within a connected component,
+$0=\lambda_1<\lambda_2\le\cdots\le\lambda_n\le2$, with zero eigenvector
+proportional to $(\sqrt{D_{11}},\ldots,\sqrt{D_{nn}})$.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.90\linewidth]{latex_fiedler.pdf}
+\caption{Full-graph Fiedler value. The graph becomes connected at $k_c=3$.}
+\label{fig:fiedler}
+\end{figure}
+
+For the full 2,000-vertex graph, $\lambda_2(k)$ increases at every step from
+0.03215373 at $k=3$ to 0.13746997 at $k=64$, indicating stronger normalized
+spectral connectivity. This is an empirical observation, not a general
+monotonicity guarantee: adding edges changes both $A$ and $D$.
+At $k=2$, the full graph has $\lambda_2=0$, whereas its large connected
+component has $\lambda_2=0.01816991$.
+
+\subsection*{Low spectrum and a separated simple eigenvalue}
+
+Figure~\ref{fig:spectrum} shows the 32 smallest eigenvalues of the large
+component. To select a separated nonzero eigenvalue, maximize
+\[
+ g_j=\min\{\lambda_j-\lambda_{j-1},\lambda_{j+1}-\lambda_j\},
+ \qquad j=2,\ldots,32.
+\]
+The 33rd eigenvalue supplies the last candidate's right-hand gap.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{latex_spectrum.pdf}
+\caption{The 32 lowest eigenvalues and two-sided isolation gaps.}
+\label{fig:spectrum}
+\end{figure}
+
+The selected eigenvalue is $\lambda_2=0.0181699110$. Its left and right gaps are
+0.0181699110 and 0.0064237727, respectively; the smaller gap is 35.35\% of
+$\lambda_2$. The largest eigenpair residual is $1.12\times10^{-15}$, far below
+these gaps, supporting numerical simplicity and separation.
+The small weighted triangle has eigenvalues $0$, $1.47716388$, and $1.52283612$.
+
+\subsection*{Three-dimensional embedding and nodal domains}
+
+Use the coordinates $(q_2(i),q_3(i),q_4(i))$ from orthonormal eigenvectors.
+Their eigenvalues are $0.01816991$, $0.02459368$, and $0.02853374$, respectively.
+Writing $Q=[q_2\ q_3\ q_4]$ gives
+\[
+ \widehat LQ=Q\,\operatorname{diag}(\lambda_2,\lambda_3,\lambda_4),
+\]
+so these vectors span a three-dimensional invariant subspace.
+A strong nodal domain is a connected component of the subgraph induced by
+$q_2>0$ or $q_2<0$. Both sign-induced subgraphs are connected, giving domains
+of 963 and 1,034 vertices. No eigenvector entries are numerically zero.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{latex_embedding.pdf}
+\caption{Two views of the embedding in $(q_2,q_3,q_4)$, colored by the nodal
+domains of $q_2$: domain 1 (blue, 963 vertices) and domain 2 (orange, 1,034 vertices).}
+\label{fig:embedding}
+\end{figure}
+
+The domains are joined by 175 edges, with normalized cut 0.104903.
+They are connected parts of the large component, not separate components of
+the original graph. Reversing the eigenvector sign exchanges the labels but
+preserves membership.
+
+\subsection*{Relationship to the original data}
+
+The strongest raw-feature association is onset rate. Domain means account for
+44.97\% of its total variance, measured by
+\[
+ \eta^2=\frac{\sum_g n_g(\bar x_g-\bar x)^2}
+                  {\sum_i(x_i-\bar x)^2}.
+\]
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Measure & Domain 1 & Domain 2\\
+\midrule
+Mean onset rate (events/s) & 2.433 & 4.385\\
+Mean BPM & 128.62 & 116.87\\
+MFCC mean 01 (standardized mean) & 0.49 & $-0.46$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Domain 2 has denser onsets but lower average BPM, so the partition is not simply
+fast versus slow music. Several MFCC means also differ; for example, MFCC
+mean 01 has $\eta^2=0.2264$, indicating a timbral contribution.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{latex_genres.pdf}
+\caption{Prevalence of the 12 most common genre tags within each nodal domain.
+Tracks may carry multiple labels.}
+\label{fig:genres}
+\end{figure}
+
+Domain 1 has more classical, soundtrack, ambient and orchestral labels;
+domain 2 has more electronic and pop labels. Classical prevalence is 23.16\%
+versus 3.58\%, while electronic prevalence is 17.13\% versus 31.72\%.
+The domains remain musically mixed. Acoustic associations are descriptive
+because those features also define the graph; tags provide an interpretation,
+not an independent classification test.
+
+\section*{E7. Discussion}
+
+The graph is almost connected at $k=2$ and fully connected at $k=3$, despite
+low degrees and little triangle closure. Its spectral partition captures
+differences in onset density, timbre and genre composition. Increasing $k$
+strengthens normalized spectral connectivity, but does not necessarily improve
+musical interpretation.
+
+The two-stage sample, repeated artists and representation choices limit
+generalization. High retained PCA variance does not guarantee preservation
+of every nearest neighbor. Artist-aware resampling and parameter sensitivity
+analysis would help assess robustness. These findings describe the specified
+graph, rather than pure genre classes or predictive performance.
+
+\paragraph{Reproducibility.}
+Scripts and LaTeX source are in \texttt{code/}; numerical outputs are in
+\texttt{results/}. Rebuild the report with \texttt{python code/build\_report.py}.
+
+\begin{thebibliography}{9}
+\bibitem{jamendo}
+D. Bogdanov, M. Won, P. Tovstogan, A. Porter, and X. Serra.
+\emph{The MTG-Jamendo Dataset for Automatic Music Tagging}.
+Machine Learning for Music Discovery Workshop, ICML, 2019.
+\url{https://hdl.handle.net/10230/42015}.
+\bibitem{repository}
+Music Technology Group. MTG-Jamendo dataset: metadata, features and documentation.
+\url{https://github.com/MTG/mtg-jamendo-dataset}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,27 @@
+{
+  "n_tracks": 2000,
+  "n_artists": 673,
+  "raw_dimensions": 100,
+  "pca_dimensions": 32,
+  "sigma": 1.2439228474629322,
+  "retained_variance": 0.9441594700416137,
+  "distinct_feature_vectors": 1997,
+  "genre_labeled": 1973,
+  "mood_labeled": 2000,
+  "instrument_labeled": 1156,
+  "pair_count": 1999000,
+  "distance_quantiles": [
+    0.0,
+    1.896692458076644,
+    2.25391000162534,
+    2.662770649757096,
+    6.266323562928762
+  ],
+  "similarity_quantiles": [
+    3.0865546376033648e-06,
+    0.10115161213592101,
+    0.19367803879876455,
+    0.31271684685575607,
+    1.0
+  ]
+}
