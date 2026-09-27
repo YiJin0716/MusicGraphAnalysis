@@ -50,3 +50,17 @@ See [code/README.md](code/README.md) for input formats, preprocessing details, a
 The tracks form a two-stage pilot sample from the MTG-Jamendo mood/theme feature archives, using seed 521. The repository contains acoustic statistics and metadata, not audio. Sampling details and source hashes are recorded in [source_data/SOURCE.json](source_data/SOURCE.json).
 
 Dataset citation: D. Bogdanov, M. Won, P. Tovstogan, A. Porter, and X. Serra, *The MTG-Jamendo Dataset for Automatic Music Tagging*, ICML Music Discovery Workshop, 2019. See [CITATION.bib](source_data/CITATION.bib), [upstream documentation](source_data/UPSTREAM_README.md), and the accompanying [upstream license](source_data/LICENSE).
+
+## E4/E5 at k=3 and k=64; E6 Leiden communities
+
+The additional analyses reuse the saved graphs and feature data in `results/`. See [selected-k E4/E5 results](results/selected_k/README.md) and [E6 results](results/E6/README.md) for methods, tables, per-track outputs, and figures. The k=2 calculation in the selected-k folder is a baseline for comparison.
+
+To reproduce these results from the repository root:
+
+```sh
+python -m pip install -r code/requirements.txt
+python -m pip install -r results/E6/requirements.txt
+python code/analyze_selected_k.py --run-dir results
+python code/compare_selected_k.py --run-dir results
+python code/analyze_e6.py
+```

@@ -1,0 +1,31 @@
+{
+  "lambda2": 0.03215373171525586,
+  "eigenvalue_count": 33,
+  "max_eigenpair_residual": 2.534666892484146e-13,
+  "orthogonality_error": 3.774758283725532e-15,
+  "selection_status": "qualified_q2",
+  "selected_index_1_based": 2,
+  "selected_eigenvalue": 0.03215373171525586,
+  "selected_isolation": 0.011930763544450718,
+  "selected_relative_isolation": 0.37105377534732537,
+  "domain_count": 2,
+  "boundary_nodes": 0,
+  "boundary_epsilon": 8.266946079863105e-10,
+  "domains": [
+    {
+      "domain_id": 1,
+      "sign": -1,
+      "nodes": 1083,
+      "smallest_global_index": 0
+    },
+    {
+      "domain_id": 2,
+      "sign": 1,
+      "nodes": 917,
+      "smallest_global_index": 3
+    }
+  ],
+  "crossing_edges": 369,
+  "crossing_weight": 235.97732103407174,
+  "normalized_cut": 0.15117984131052598
+}

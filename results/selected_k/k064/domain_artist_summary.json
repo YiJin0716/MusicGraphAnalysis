@@ -1,0 +1,48 @@
+[
+  {
+    "domain_id": 1,
+    "nodes": 1014,
+    "artist_count": 407,
+    "largest_artist_count": 33,
+    "largest_artist_fraction": 0.03254437869822485,
+    "top_3_artists": [
+      {
+        "artist_id": "artist_008094",
+        "count": 33
+      },
+      {
+        "artist_id": "artist_003944",
+        "count": 20
+      },
+      {
+        "artist_id": "artist_000560",
+        "count": 19
+      }
+    ],
+    "mean_bpm": 127.95238608485299,
+    "mean_onset_rate": 2.414225518113838
+  },
+  {
+    "domain_id": 2,
+    "nodes": 986,
+    "artist_count": 422,
+    "largest_artist_count": 27,
+    "largest_artist_fraction": 0.02738336713995943,
+    "top_3_artists": [
+      {
+        "artist_id": "artist_437980",
+        "count": 27
+      },
+      {
+        "artist_id": "artist_375104",
+        "count": 23
+      },
+      {
+        "artist_id": "artist_419438",
+        "count": 20
+      }
+    ],
+    "mean_bpm": 117.10865013788477,
+    "mean_onset_rate": 4.504587626602248
+  }
+]
