@@ -1,4 +1,4 @@
-﻿"""Complete the selected-k comparison: full Fiedler sweep and aligned nodal domains."""
+"""Complete the E4/E5 extension comparison: full Fiedler sweep and aligned nodal domains."""
 import argparse
 import csv
 import json
@@ -125,7 +125,7 @@ def main():
     parser.add_argument("--run-dir", type=Path, required=True)
     args = parser.parse_args()
     run = args.run_dir.resolve()
-    out = run / "selected_k"
+    out = run / "E4_E5_extension"
     summaries = json.loads((out / "comparison.json").read_text(encoding="utf-8"))
     curve = fiedler_sweep(run, out)
     for s in summaries:

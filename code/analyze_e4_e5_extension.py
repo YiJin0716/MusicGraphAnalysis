@@ -1,7 +1,7 @@
 """E4/E5 analysis for selected saved Jamendo graphs, with a k=2 baseline.
 
-Run from any directory: python code/analyze_selected_k.py --run-dir results
-Inputs are read only. Outputs live in RUN/selected_k.
+Run from any directory: python code/analyze_e4_e5_extension.py --run-dir results
+Inputs are read only. Outputs live in RUN/E4_E5_extension.
 """
 from __future__ import annotations
 
@@ -320,7 +320,7 @@ def main():
     parser.add_argument("--run-dir", type=Path, required=True)
     args = parser.parse_args()
     run = args.run_dir.resolve()
-    out = run / "selected_k"
+    out = run / "E4_E5_extension"
     out.mkdir(parents=True, exist_ok=True)
     nodes = [json.loads(line) for line in (run / "nodes.jsonl").read_text(encoding="utf-8").splitlines()]
     assert [n["node_index"] for n in nodes] == list(range(2000))

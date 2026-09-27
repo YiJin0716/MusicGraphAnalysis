@@ -26,7 +26,7 @@ from scipy.sparse.csgraph import connected_components
 from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score
 
 RUN = HERE.parent
-SELECTED = RUN / 'selected_k'
+E4_E5 = RUN / 'E4_E5_extension'
 SEEDS = tuple(range(521, 526))
 KS = (3, 64)
 from matplotlib.ticker import MaxNLocator
@@ -254,7 +254,7 @@ def run_one(k, nodes, tags):
     folder=HERE/f'k{k:03d}'
     folder.mkdir(exist_ok=True)
     a, upper, graph, graph_hash=load_graph(k)
-    with np.load(SELECTED/f'k{k:03d}'/'spectral_data.npz',allow_pickle=False) as data:
+    with np.load(E4_E5/f'k{k:03d}'/'spectral_data.npz',allow_pickle=False) as data:
         indices=data['global_node_index']; e5=data['domain_id']
     assert np.array_equal(indices,np.arange(2000)) and np.array_equal(np.unique(e5),[1,2])
     trials=[]; raw_memberships=[]
@@ -310,7 +310,7 @@ def run_one(k, nodes, tags):
                for i,n in enumerate(nodes)))
     extra_interpretation(assignment,nodes,folder)
     plot_results(k,folder,stats,contingency,tag_rows,
-                 SELECTED/f'k{k:03d}'/'spectral_data.npz')
+                 E4_E5/f'k{k:03d}'/'spectral_data.npz')
     print(f'k={k}: {len(stats)} communities, Q={q:.6f}, selected seed={SEEDS[best]}',flush=True)
     return metrics,assignment
 
