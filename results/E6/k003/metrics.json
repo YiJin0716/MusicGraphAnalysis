@@ -1,0 +1,47 @@
+{
+  "k": 3,
+  "nodes": 2000,
+  "edges": 4888,
+  "graph_sha256": "d3e1adfc6a5b742c15fbdc2c038c19572db937fa758a1be217254a8d7d4d28a6",
+  "objective": "weighted Newman-Girvan modularity",
+  "resolution_gamma": 1.0,
+  "iterations": "until no quality increase",
+  "seeds": [
+    521,
+    522,
+    523,
+    524,
+    525
+  ],
+  "selected_seed": 522,
+  "weighted_modularity": 0.7159284743918688,
+  "community_count": 16,
+  "community_size_min": 91,
+  "community_size_median": 115.5,
+  "community_size_max": 210,
+  "community_size_top_5": [
+    210,
+    167,
+    152,
+    141,
+    140
+  ],
+  "all_communities_connected": true,
+  "cross_community_edges": 1085,
+  "cross_community_edge_fraction": 0.2219721767594108,
+  "cross_community_weight_fraction": 0.21632250455348886,
+  "restart_ari_min": 0.3919569350901147,
+  "restart_ari_median": 0.49253246087385105,
+  "e5_nodal_domain_comparison": {
+    "adjusted_rand_index": 0.08704297865061897,
+    "normalized_mutual_info": 0.2537229882228277
+  },
+  "genre_edge_agreement": {
+    "within_labeled_edges": 3711,
+    "within_shared_genre_edges": 1413,
+    "within_shared_genre_fraction": 0.3807599029911075,
+    "between_labeled_edges": 1060,
+    "between_shared_genre_edges": 393,
+    "between_shared_genre_fraction": 0.37075471698113205
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "k": 3,
+  "graph_sha256": "d3e1adfc6a5b742c15fbdc2c038c19572db937fa758a1be217254a8d7d4d28a6",
+  "component_sizes": [
+    2000
+  ],
+  "e4": {
+    "nodes": 2000,
+    "edges": 4888,
+    "degree_mean": 4.888,
+    "degree_median": 4.0,
+    "degree_min": 3,
+    "degree_max": 23,
+    "degree_mode": 3,
+    "clustering_mean": 0.16907882811744873,
+    "clustering_median": 0.13333333333333333,
+    "clustering_zero_fraction": 0.2965,
+    "clustering_one_fraction": 0.0075,
+    "triangles": 1033,
+    "transitivity": 0.12325988385967704
+  },
+  "e5": {
+    "lambda2": 0.03215373171525586,
+    "eigenvalue_count": 33,
+    "max_eigenpair_residual": 2.534666892484146e-13,
+    "orthogonality_error": 3.774758283725532e-15,
+    "selection_status": "qualified_q2",
+    "selected_index_1_based": 2,
+    "selected_eigenvalue": 0.03215373171525586,
+    "selected_isolation": 0.011930763544450718,
+    "selected_relative_isolation": 0.37105377534732537,
+    "domain_count": 2,
+    "boundary_nodes": 0,
+    "boundary_epsilon": 8.266946079863105e-10,
+    "domains": [
+      {
+        "domain_id": 1,
+        "sign": -1,
+        "nodes": 1083,
+        "smallest_global_index": 0
+      },
+      {
+        "domain_id": 2,
+        "sign": 1,
+        "nodes": 917,
+        "smallest_global_index": 3
+      }
+    ],
+    "crossing_edges": 369,
+    "crossing_weight": 235.97732103407174,
+    "normalized_cut": 0.15117984131052598
+  }
+}
