@@ -1,0 +1,26 @@
+[
+  {
+    "experiment": "moodtheme",
+    "n_nodes": 18486,
+    "n_artists": 1533,
+    "excluded_tracks": 0,
+    "pca_explained_variance": 0.9423627382863706,
+    "sigma": 1.0498177180983128,
+    "k2_edges": 30351,
+    "k2_components": 67,
+    "k2_largest_fraction": 0.9870172022070757,
+    "first_connected_k_in_2_64": 6
+  },
+  {
+    "experiment": "full",
+    "n_nodes": 55607,
+    "n_artists": 3565,
+    "excluded_tracks": 2,
+    "pca_explained_variance": 0.9408556672203527,
+    "sigma": 0.9787823760136305,
+    "k2_edges": 92708,
+    "k2_components": 113,
+    "k2_largest_fraction": 0.9926627942525221,
+    "first_connected_k_in_2_64": 5
+  }
+]

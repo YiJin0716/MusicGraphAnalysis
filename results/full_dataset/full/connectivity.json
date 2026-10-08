@@ -1,0 +1,821 @@
+[
+  {
+    "k": 2,
+    "n_nodes": 55607,
+    "n_edges": 92708,
+    "n_components": 113,
+    "largest_component_size": 55199,
+    "largest_component_fraction": 0.9926627942525221,
+    "component_sizes": [
+      55199,
+      8,
+      8,
+      7,
+      7,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  {
+    "k": 3,
+    "n_nodes": 55607,
+    "n_edges": 138229,
+    "n_components": 12,
+    "largest_component_size": 55546,
+    "largest_component_fraction": 0.9989030158073624,
+    "component_sizes": [
+      55546,
+      8,
+      8,
+      6,
+      6,
+      6,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "k": 4,
+    "n_nodes": 55607,
+    "n_edges": 183540,
+    "n_components": 4,
+    "largest_component_size": 55591,
+    "largest_component_fraction": 0.9997122664412754,
+    "component_sizes": [
+      55591,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "k": 5,
+    "n_nodes": 55607,
+    "n_edges": 228786,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 6,
+    "n_nodes": 55607,
+    "n_edges": 273939,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 7,
+    "n_nodes": 55607,
+    "n_edges": 319270,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 8,
+    "n_nodes": 55607,
+    "n_edges": 364279,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 9,
+    "n_nodes": 55607,
+    "n_edges": 409365,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 10,
+    "n_nodes": 55607,
+    "n_edges": 454450,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 11,
+    "n_nodes": 55607,
+    "n_edges": 499396,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 12,
+    "n_nodes": 55607,
+    "n_edges": 544465,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 13,
+    "n_nodes": 55607,
+    "n_edges": 589437,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 14,
+    "n_nodes": 55607,
+    "n_edges": 634314,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 15,
+    "n_nodes": 55607,
+    "n_edges": 679113,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 16,
+    "n_nodes": 55607,
+    "n_edges": 723904,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 17,
+    "n_nodes": 55607,
+    "n_edges": 768724,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 18,
+    "n_nodes": 55607,
+    "n_edges": 813537,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 19,
+    "n_nodes": 55607,
+    "n_edges": 858257,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 20,
+    "n_nodes": 55607,
+    "n_edges": 903008,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 21,
+    "n_nodes": 55607,
+    "n_edges": 947651,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 22,
+    "n_nodes": 55607,
+    "n_edges": 992338,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 23,
+    "n_nodes": 55607,
+    "n_edges": 1036883,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 24,
+    "n_nodes": 55607,
+    "n_edges": 1081571,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 25,
+    "n_nodes": 55607,
+    "n_edges": 1126202,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 26,
+    "n_nodes": 55607,
+    "n_edges": 1171000,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 27,
+    "n_nodes": 55607,
+    "n_edges": 1215577,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 28,
+    "n_nodes": 55607,
+    "n_edges": 1260155,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 29,
+    "n_nodes": 55607,
+    "n_edges": 1304702,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 30,
+    "n_nodes": 55607,
+    "n_edges": 1349163,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 31,
+    "n_nodes": 55607,
+    "n_edges": 1393712,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 32,
+    "n_nodes": 55607,
+    "n_edges": 1438369,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 33,
+    "n_nodes": 55607,
+    "n_edges": 1482992,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 34,
+    "n_nodes": 55607,
+    "n_edges": 1527535,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 35,
+    "n_nodes": 55607,
+    "n_edges": 1571958,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 36,
+    "n_nodes": 55607,
+    "n_edges": 1616572,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 37,
+    "n_nodes": 55607,
+    "n_edges": 1660910,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 38,
+    "n_nodes": 55607,
+    "n_edges": 1705314,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 39,
+    "n_nodes": 55607,
+    "n_edges": 1749755,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 40,
+    "n_nodes": 55607,
+    "n_edges": 1794112,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 41,
+    "n_nodes": 55607,
+    "n_edges": 1838583,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 42,
+    "n_nodes": 55607,
+    "n_edges": 1882977,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 43,
+    "n_nodes": 55607,
+    "n_edges": 1927535,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 44,
+    "n_nodes": 55607,
+    "n_edges": 1971936,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 45,
+    "n_nodes": 55607,
+    "n_edges": 2016413,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 46,
+    "n_nodes": 55607,
+    "n_edges": 2060778,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 47,
+    "n_nodes": 55607,
+    "n_edges": 2105236,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 48,
+    "n_nodes": 55607,
+    "n_edges": 2149726,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 49,
+    "n_nodes": 55607,
+    "n_edges": 2194049,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 50,
+    "n_nodes": 55607,
+    "n_edges": 2238364,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 51,
+    "n_nodes": 55607,
+    "n_edges": 2282678,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 52,
+    "n_nodes": 55607,
+    "n_edges": 2326978,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 53,
+    "n_nodes": 55607,
+    "n_edges": 2371352,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 54,
+    "n_nodes": 55607,
+    "n_edges": 2415609,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 55,
+    "n_nodes": 55607,
+    "n_edges": 2460066,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 56,
+    "n_nodes": 55607,
+    "n_edges": 2504392,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 57,
+    "n_nodes": 55607,
+    "n_edges": 2548589,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 58,
+    "n_nodes": 55607,
+    "n_edges": 2592824,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 59,
+    "n_nodes": 55607,
+    "n_edges": 2637204,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 60,
+    "n_nodes": 55607,
+    "n_edges": 2681508,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 61,
+    "n_nodes": 55607,
+    "n_edges": 2725714,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 62,
+    "n_nodes": 55607,
+    "n_edges": 2769924,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 63,
+    "n_nodes": 55607,
+    "n_edges": 2813981,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  },
+  {
+    "k": 64,
+    "n_nodes": 55607,
+    "n_edges": 2858054,
+    "n_components": 1,
+    "largest_component_size": 55607,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      55607
+    ]
+  }
+]

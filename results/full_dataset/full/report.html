@@ -1,0 +1,15 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>full E1–E3</title>
+<style>body{font:16px/1.7 system-ui;max-width:1000px;margin:40px auto;padding:0 20px}img{max-width:100%}pre{white-space:pre-wrap;background:#f2f4f8;padding:20px}</style>
+<h1>full 完整数据集 E1–E3</h1>
+<p>官方 Essentia/AcousticBrainz 预计算统计。无抽样；歌曲标签不参与特征、PCA、距离、带宽或建图。</p>
+<h2>E1 特征与 PCA</h2><p>标签表 55,609 首；有效节点 55,607；排除 2 首；艺术家 3,565。
+原始 100 维（MFCC mean/std 26、HPCP mean/std 72、BPM/onset rate 2）；总体标准差 z-score，各组按有效维数平方根缩放，full-SVD PCA 32 维、不白化；累计解释方差 94.0856%。</p><img src="E1_pca.png">
+<h2>E2 完整交互矩阵</h2><p>完整 float64 欧氏距离与 Gaussian 相似度矩阵，维度 55607 × 55607。
+σ=0.978782376，取每个节点第 10 个非自身近邻距离的中位数。W=exp(-R²/(2σ²))，相似度对角线为 0。
+不同 ID 的零距离歌曲对 544，仍保留独立节点；数值下溢为零的非邻居相似度对 0，不影响已核验为正的保留图边。</p><img src="E2_similarity.png">
+<h2>E3 kNN 图与连通性</h2><p>精确近邻，距离相同按 node_index 排序，排除自身；并集对称化，边权采用 E2 的相似度。扫描 k=2…64，固定邻居序列和 σ，共 63 张 CSR 图。
+k=2 时 113 个分量，最大分量 55,199 个节点。
+扫描范围内首个连通 k：5。未测试 k=1，不声称是所有正整数 k 的全局阈值。</p><img src="E3_connectivity.png">
+<p>nodes.jsonl 的 node_index 对齐所有矩阵与图；components/kXXX.npz 的 labels 按分量规模降序重编号，0 为最大分量。
+完整方法/软件/来源见 config.json，排除原因见 ../../../source_data/full_dataset/exclusions.json；独立验证结果见 validation.json。</p>
+<h2>使用限制</h2><p>两实验在不同总体上独立拟合 PCA 和 σ，故边权不直接跨实验比较。标签缺失不代表属性不存在；同艺术家及重复声学特征可造成相关性。这里未运行 E4–E7。</p></html>

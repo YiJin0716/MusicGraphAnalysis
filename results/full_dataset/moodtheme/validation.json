@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "full_matrix_entries_checked": 341732196,
+  "exact_neighbors_checked": 1183104,
+  "saved_graphs_checked": 63,
+  "source_and_node_alignment": true,
+  "PCA_reconstruction": true,
+  "all_component_labels_checked": true,
+  "all_artifacts_sha256": true,
+  "elapsed_seconds": 261.92297625541687,
+  "validator_sha256": "57e7c47ff5a7f53ba77e93734866fc542524370fe0d3000d2512415bccdd44f4"
+}

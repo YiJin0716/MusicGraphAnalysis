@@ -1,0 +1,30 @@
+{
+  "raw_30s_metadata_tracks": 55701,
+  "official_feature_tracks": 55699,
+  "verified_feature_tracks": 55699,
+  "full_metadata_tracks": 55609,
+  "moodtheme_metadata_tracks": 18486,
+  "eligible_full_tracks": 55607,
+  "eligible_moodtheme_tracks": 18486,
+  "excluded_tracks": 2,
+  "clipped_variances": 0,
+  "mood_features_match_full_archives": true,
+  "outputs": [
+    {
+      "file": "tracks.jsonl.gz",
+      "sha256": "c6c94c69059f70ce8a7884cca26954a4c8230506d0dd5ea60c51ac8116eb6d90"
+    },
+    {
+      "file": "features_raw.npy",
+      "sha256": "405e6d807a4e1dd360afd7aa9df8722eadb6285d49ecf94523b93bb8c550cbe6"
+    },
+    {
+      "file": "nodes.jsonl",
+      "sha256": "a996d46d563d9012b32b62a940158526e0043bf46f30dfd49c88f6e1d241e798"
+    },
+    {
+      "file": "exclusions.json",
+      "sha256": "610a7797d2cf5c1aa32978bfb4cda50b302dea90832d4249530a6336ed92020e"
+    }
+  ]
+}

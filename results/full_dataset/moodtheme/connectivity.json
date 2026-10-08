@@ -1,0 +1,773 @@
+[
+  {
+    "k": 2,
+    "n_nodes": 18486,
+    "n_edges": 30351,
+    "n_components": 67,
+    "largest_component_size": 18246,
+    "largest_component_fraction": 0.9870172022070757,
+    "component_sizes": [
+      18246,
+      8,
+      8,
+      8,
+      6,
+      6,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  {
+    "k": 3,
+    "n_nodes": 18486,
+    "n_edges": 45246,
+    "n_components": 9,
+    "largest_component_size": 18444,
+    "largest_component_fraction": 0.9977280103862383,
+    "component_sizes": [
+      18444,
+      8,
+      8,
+      6,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "k": 4,
+    "n_nodes": 18486,
+    "n_edges": 60149,
+    "n_components": 4,
+    "largest_component_size": 18464,
+    "largest_component_fraction": 0.9988099102023152,
+    "component_sizes": [
+      18464,
+      8,
+      8,
+      6
+    ]
+  },
+  {
+    "k": 5,
+    "n_nodes": 18486,
+    "n_edges": 74920,
+    "n_components": 2,
+    "largest_component_size": 18478,
+    "largest_component_fraction": 0.9995672400735692,
+    "component_sizes": [
+      18478,
+      8
+    ]
+  },
+  {
+    "k": 6,
+    "n_nodes": 18486,
+    "n_edges": 89759,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 7,
+    "n_nodes": 18486,
+    "n_edges": 104542,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 8,
+    "n_nodes": 18486,
+    "n_edges": 119303,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 9,
+    "n_nodes": 18486,
+    "n_edges": 134065,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 10,
+    "n_nodes": 18486,
+    "n_edges": 148843,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 11,
+    "n_nodes": 18486,
+    "n_edges": 163604,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 12,
+    "n_nodes": 18486,
+    "n_edges": 178323,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 13,
+    "n_nodes": 18486,
+    "n_edges": 193042,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 14,
+    "n_nodes": 18486,
+    "n_edges": 207637,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 15,
+    "n_nodes": 18486,
+    "n_edges": 222320,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 16,
+    "n_nodes": 18486,
+    "n_edges": 236916,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 17,
+    "n_nodes": 18486,
+    "n_edges": 251654,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 18,
+    "n_nodes": 18486,
+    "n_edges": 266307,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 19,
+    "n_nodes": 18486,
+    "n_edges": 280999,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 20,
+    "n_nodes": 18486,
+    "n_edges": 295629,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 21,
+    "n_nodes": 18486,
+    "n_edges": 310250,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 22,
+    "n_nodes": 18486,
+    "n_edges": 324911,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 23,
+    "n_nodes": 18486,
+    "n_edges": 339590,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 24,
+    "n_nodes": 18486,
+    "n_edges": 354184,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 25,
+    "n_nodes": 18486,
+    "n_edges": 368751,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 26,
+    "n_nodes": 18486,
+    "n_edges": 383316,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 27,
+    "n_nodes": 18486,
+    "n_edges": 397943,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 28,
+    "n_nodes": 18486,
+    "n_edges": 412595,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 29,
+    "n_nodes": 18486,
+    "n_edges": 427090,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 30,
+    "n_nodes": 18486,
+    "n_edges": 441657,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 31,
+    "n_nodes": 18486,
+    "n_edges": 456252,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 32,
+    "n_nodes": 18486,
+    "n_edges": 470776,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 33,
+    "n_nodes": 18486,
+    "n_edges": 485390,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 34,
+    "n_nodes": 18486,
+    "n_edges": 500028,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 35,
+    "n_nodes": 18486,
+    "n_edges": 514549,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 36,
+    "n_nodes": 18486,
+    "n_edges": 529093,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 37,
+    "n_nodes": 18486,
+    "n_edges": 543592,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 38,
+    "n_nodes": 18486,
+    "n_edges": 558051,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 39,
+    "n_nodes": 18486,
+    "n_edges": 572623,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 40,
+    "n_nodes": 18486,
+    "n_edges": 587152,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 41,
+    "n_nodes": 18486,
+    "n_edges": 601673,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 42,
+    "n_nodes": 18486,
+    "n_edges": 616182,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 43,
+    "n_nodes": 18486,
+    "n_edges": 630644,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 44,
+    "n_nodes": 18486,
+    "n_edges": 645078,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 45,
+    "n_nodes": 18486,
+    "n_edges": 659606,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 46,
+    "n_nodes": 18486,
+    "n_edges": 674064,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 47,
+    "n_nodes": 18486,
+    "n_edges": 688557,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 48,
+    "n_nodes": 18486,
+    "n_edges": 703031,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 49,
+    "n_nodes": 18486,
+    "n_edges": 717528,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 50,
+    "n_nodes": 18486,
+    "n_edges": 731985,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 51,
+    "n_nodes": 18486,
+    "n_edges": 746443,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 52,
+    "n_nodes": 18486,
+    "n_edges": 760835,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 53,
+    "n_nodes": 18486,
+    "n_edges": 775304,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 54,
+    "n_nodes": 18486,
+    "n_edges": 789799,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 55,
+    "n_nodes": 18486,
+    "n_edges": 804283,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 56,
+    "n_nodes": 18486,
+    "n_edges": 818743,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 57,
+    "n_nodes": 18486,
+    "n_edges": 833188,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 58,
+    "n_nodes": 18486,
+    "n_edges": 847639,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 59,
+    "n_nodes": 18486,
+    "n_edges": 862095,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 60,
+    "n_nodes": 18486,
+    "n_edges": 876482,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 61,
+    "n_nodes": 18486,
+    "n_edges": 890858,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 62,
+    "n_nodes": 18486,
+    "n_edges": 905235,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 63,
+    "n_nodes": 18486,
+    "n_edges": 919686,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  },
+  {
+    "k": 64,
+    "n_nodes": 18486,
+    "n_edges": 934038,
+    "n_components": 1,
+    "largest_component_size": 18486,
+    "largest_component_fraction": 1.0,
+    "component_sizes": [
+      18486
+    ]
+  }
+]

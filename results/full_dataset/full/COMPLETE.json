@@ -1,0 +1,10 @@
+{
+  "experiment": "full",
+  "phases": [
+    "E1",
+    "E2",
+    "E3"
+  ],
+  "elapsed_seconds": 1138.8507781028748,
+  "independently_validated": true
+}

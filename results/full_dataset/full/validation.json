@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "full_matrix_entries_checked": 3092138449,
+  "matrix_values_match_symmetric_functions_exactly": true,
+  "matrix_symmetry_method": "Every entry equals the deterministic symmetric Euclidean / Gaussian formula exactly",
+  "exact_neighbors_checked": 3558848,
+  "saved_graphs_checked": 63,
+  "source_and_node_alignment": true,
+  "PCA_reconstruction": true,
+  "all_component_labels_checked": true,
+  "all_artifacts_sha256": true,
+  "elapsed_seconds": 525.8392143249512,
+  "validator_sha256": "878bc920eb1db4e21daaee34a1f807b0630b33594bad4db3a5506b8ff009f8f1"
+}

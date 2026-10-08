@@ -1,0 +1,29 @@
+{
+  "experiment": "full",
+  "scope": "complete cleaned 195-tag autotagging set",
+  "dimensions": 32,
+  "seed": 521,
+  "k_min": 2,
+  "k_max": 64,
+  "precision": "float64",
+  "neighbor_method": "exact blocked Euclidean distance; distance then node_index ties",
+  "block_rows": 256,
+  "symmetrization": "union",
+  "bandwidth_neighbor": 10,
+  "upstream": {
+    "repository": "MTG/mtg-jamendo-dataset",
+    "commit": "cafd8e20c265ed84f1e61f1c875327971f43a62f"
+  },
+  "reference_pipeline": {
+    "repository": "YiJin0716/MusicGraphAnalysis",
+    "commit": "589c000891936956f78c83ba0357c87387ffab46"
+  },
+  "reference_code_sha256": "81a8cacd3f2e0dde962cadce7d4b3906b754054be075500bb628699f20840816",
+  "implementation_sha256": "3f7175542a1649398f1a3b5ed1e5c6e12605273d7d25ba49e58624ecb2252289",
+  "input_audit_sha256": "a1b4bb9991baae0a8559546c437af029c89ff9ad252b9acabb519862c45fb39a",
+  "python": "3.11.7 | packaged by Anaconda, Inc. | (main, Dec 15 2023, 18:05:47) [MSC v.1916 64 bit (AMD64)]",
+  "numpy": "1.26.4",
+  "scipy": "1.11.4",
+  "sklearn": "1.2.2",
+  "platform": "Windows-10-10.0.26200-SP0"
+}

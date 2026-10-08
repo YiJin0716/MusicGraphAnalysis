@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "pilot_tracks": 2000,
+  "all_63_graphs_match_reference": true,
+  "neighbor_indices_exact_match": true,
+  "matrices_match": true,
+  "boundary_ties_and_self_exclusion": true,
+  "sigma": 1.2439228474629325,
+  "weight_max_abs_error": 0.0
+}

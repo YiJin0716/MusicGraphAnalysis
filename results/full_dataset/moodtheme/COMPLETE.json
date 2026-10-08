@@ -1,0 +1,10 @@
+{
+  "experiment": "moodtheme",
+  "phases": [
+    "E1",
+    "E2",
+    "E3"
+  ],
+  "elapsed_seconds": 150.73605155944824,
+  "independently_validated": true
+}
